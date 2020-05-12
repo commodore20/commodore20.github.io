@@ -1,0 +1,277 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="globalstyle.css" />
+		<link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<nav
+				class="navbar navbar-expand-xl navbar-light navbar-toggleable-lg navbar-inverse"
+				style="background-color: #e3f2fd;"
+			>
+				<a class="navbar-brand" href="index.html"
+					><img src="images/brandname-sm.png" alt=""
+				/></a>
+
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-Nav">
+						<li class="nav-item">
+							<a class="nav-link fa fa-home" href="index.html"> Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link fa fa-info" href="#"> Appoinments</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link fa fa-exclamation-circle" href="#">
+								Notifications</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link fa fa-user" href="#"> Profile</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle fa fa-cogs"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								Settings
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Edit Profile</a>
+								<a class="dropdown-item" href="#">Advanced Settings</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Logout</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</nav>
+
+			<div class="emp-profile body">
+				<form method="post">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="profile-img">
+								<img
+									src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSaitxdVetpwsWyXNuHm9dykCmPTzq6xwSTh8LW7eU8as_sRT&s"
+									alt=""
+								/>
+								<div class="file btn btn-lg btn-primary">
+									Change Photo
+									<input type="file" name="file" />
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="profile-head">
+								<h3>
+									<strong>Juana Dela Cruz</strong>
+								</h3>
+								<h6>
+									Dietrician
+								</h6>
+								<p class="proile-rating">RATINGS: <span>4.5/5</span></p>
+								<ul class="nav nav-tabs" id="myTab" role="tablist">
+									<li class="nav-item">
+										<a
+											class="nav-link active"
+											id="home-tab"
+											data-toggle="tab"
+											href="#home"
+											role="tab"
+											aria-controls="home"
+											aria-selected="true"
+											>About</a
+										>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link"
+											id="profile-tab"
+											data-toggle="tab"
+											href="#profile"
+											role="tab"
+											aria-controls="profile"
+											aria-selected="false"
+											>Timeline</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<input
+								type="submit"
+								class="profile-edit-btn"
+								name="btnAddMore"
+								value="Edit Profile"
+							/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="profile-work">
+								<p>Time Available</p>
+								<a href="">Monday</a><br />
+								<a href="">Tuesday</a><br />
+								<a href="">Wednesday</a><br />
+								<a href="">Thursday</a><br />
+								<a href="">Friday</a><br />
+								<a href="">Saturday</a><br />
+								<a href="">Sunday</a><br />
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="tab-content profile-tab" id="myTabContent">
+								<div
+									class="tab-pane fade show active"
+									id="home"
+									role="tabpanel"
+									aria-labelledby="home-tab"
+								>
+									<div class="row">
+										<div class="col-md-6">
+											<label>User Id</label>
+										</div>
+										<div class="col-md-6">
+											<p></p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<label>Name</label>
+										</div>
+										<div class="col-md-6">
+											<p></p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<label>Email</label>
+										</div>
+										<div class="col-md-6">
+											<p></p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<label>Phone</label>
+										</div>
+										<div class="col-md-6">
+											<p></p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<label>Specialty</label>
+										</div>
+										<div class="col-md-6">
+											<p></p>
+										</div>
+									</div>
+								</div>
+								<div
+									class="tab-pane fade"
+									id="profile"
+									role="tabpanel"
+									aria-labelledby="profile-tab"
+								>
+									<div class="row">
+										<div class="col-md-6">
+											<label>Years of Experience</label>
+										</div>
+										<div class="col-md-6">
+											<p>20 Years</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<label>Rate per Session</label>
+										</div>
+										<div class="col-md-6">
+											<p>PHP400.00</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<label>Address of Office</label>
+										</div>
+										<div class="col-md-6">
+											<p>Mindanao, Philippines</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<label>Appointments per Day</label>
+										</div>
+										<div class="col-md-6">
+											<p>5-10</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<label>Availability</label>
+										</div>
+										<div class="col-md-6">
+											<p>6 months</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<label>Your Bio</label><br />
+											<p>Your detail description</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
