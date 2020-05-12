@@ -1,9 +1,8 @@
 <html>
 	<head>
-		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="globalstyle.css" />
-		<link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css" />
-		<link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/globalstyle.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -35,10 +34,9 @@
 		<div class="container-fluid">
 			<nav
 				class="navbar navbar-expand-xl navbar-light navbar-toggleable-lg navbar-inverse"
-				style="background-color: #e3f2fd;"
 			>
 				<a class="navbar-brand" href="index.html"
-					><img src="brandname-sm.png" alt=""
+					><img src="images/logo-sm.png" alt=""
 				/></a>
 				<button
 					class="navbar-toggler"
@@ -69,12 +67,12 @@
 				</div>
 			</nav>
 			<div id="BodyContent" class="container-fluid border border-dark">
-				<div class="container">
+				<div class="container-fluid">
 					<div class="content-header">
-						<div class="title-primary">
-							<i class="fa fa-user text-black-50" aria-hidden="true"
-								>Register</i
-							>
+						<div class="title-primary text-center">
+							<h3><i class="fa fa-user text-black-50" aria-hidden="true"
+								>Pre-Register Now to access the meDPulse!</i
+							></h3>
 						</div>
 						<hr />
 					</div>
@@ -94,14 +92,13 @@
 							value="_P3ZS1Yn9KKCCjyUZsjhV79StR6ivsNL9MkYrxSVyNgdUlFBicRzpcngccT87TxFNuVizqSLs3py6FoUh4EYTg86W74GCKC-G5YGcqmvm9o1"
 						/>
 						<div class="row">
-							<div class="col-sm-6">
+							<div class="col-md-4 col-sm-3"></div>
+							<div class="col-md-4 col-sm-3">
 								<div class="form-group row">
 									<label
-										class="col-lg-3 col-form-label text-lg-right"
 										for="FirstName"
 										>First Name</label
 									>
-									<div class="col-lg-9">
 										<input
 											class="form-control text-box single-line"
 											data-val="true"
@@ -118,15 +115,14 @@
 											data-valmsg-for="FirstName"
 											data-valmsg-replace="true"
 										></span>
-									</div>
+									
 								</div>
 								<div class="form-group row">
 									<label
-										class="col-lg-3 col-form-label text-lg-right"
 										for="MiddleName"
 										>Middle Name</label
 									>
-									<div class="col-lg-9">
+
 										<input
 											class="form-control text-box single-line"
 											data-val="true"
@@ -144,15 +140,14 @@
 											data-valmsg-for="MiddleName"
 											data-valmsg-replace="true"
 										></span>
-									</div>
+								
 								</div>
 								<div class="form-group row">
 									<label
-										class="col-lg-3 col-form-label text-lg-right"
 										for="LastName"
 										>Last Name</label
 									>
-									<div class="col-lg-9">
+
 										<input
 											autofocus=""
 											class="form-control text-box single-line"
@@ -170,251 +165,61 @@
 											data-valmsg-for="LastName"
 											data-valmsg-replace="true"
 										></span>
-									</div>
 								</div>
-
+								
 								<div class="form-group row">
 									<label
-										class="col-lg-3 col-form-label text-lg-right"
-										for="NameSuffix"
-										>Name Suffix</label
+										
+										for="email"
+										>Email</label
 									>
-									<div class="col-lg-9">
+								
 										<input
 											class="form-control text-box single-line"
 											data-val="true"
-											data-val-length="The field Name Suffix must be a string with a maximum length of 5."
-											data-val-length-max="5"
-											id="NameSuffix"
-											name="NameSuffix"
-											placeholder="ex: Jr., Sr., etc..."
+											id="email"
+											name="email"
+											placeholder="edit@gmail.com"
 											type="text"
 											value=""
 										/>
 										<span
 											class="field-validation-valid"
-											data-valmsg-for="NameSuffix"
+											data-valmsg-for="email"
 											data-valmsg-replace="true"
 										></span>
-									</div>
+								
 								</div>
 								<div class="form-group row">
-									<label
-										class="col-lg-3 col-form-label text-lg-right"
-										for="BirthMonth"
-										>Birth Date</label
-									>
-									<div class="col-lg-9">
-										<input
-											data-val="true"
-											data-val-date="The field Birth Date must be a date."
-											data-val-required="The Birth Date field is required."
-											id="BirthDate"
-											name="BirthDate"
-											type="hidden"
-											value=""
-										/>
-										<div class="input-group mimic-input">
-											<select
-												class="form-control"
-												id="BirthMonth"
-												name="BirthMonth"
-												data-val="true"
-												data-val-required="The Birth Month field is required."
-											>
-												<option value="">month</option>
-												<option value="0">Jan</option>
-												<option value="1">Feb</option>
-												<option value="2">Mar</option>
-												<option value="3">Apr</option>
-												<option value="4">May</option>
-												<option value="5">Jun</option>
-												<option value="6">Jul</option>
-												<option value="7">Aug</option>
-												<option value="8">Sep</option>
-												<option value="9">Oct</option>
-												<option value="10">Nov</option>
-												<option value="11">Dec</option>
-											</select>
-											<select
-												class="form-control"
-												id="BirthDay"
-												name="BirthDay"
-												data-val="true"
-												data-val-required="The Birth Day field is required."
-											>
-												<option value="">day</option>
-											</select>
-											<select
-												class="form-control"
-												id="BirthYear"
-												name="BirthYear"
-												data-val="true"
-												data-val-required="The Birth Year field is required."
-											>
-												<option value="">year</option>
-											</select>
-										</div>
-										<span
-											id="BirthDateError"
-											class="field-validation-valid"
-											data-valmsg-for="BirthDate"
-											data-valmsg-replace="true"
-										></span>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="form-group row">
-									<label
-										class="col-lg-3 col-form-label text-lg-right"
-										for="LocationId"
-										>Location</label
-									>
-									<div class="col-lg-9">
-										<select
-											class="form-control"
-											data-val="true"
-											data-val-number="The field Location must be a number."
-											data-val-required="The Location field is required."
-											id="LocationId"
-											name="LocationId"
-										>
-											<option value="">- select location -</option>
-										</select>
-										<span
-											class="field-validation-valid"
-											data-valmsg-for="LocationId"
-											data-valmsg-replace="true"
-										></span>
-									</div>
-								</div>
-								<div class="form-group row">
-									<label
-										class="col-lg-3 col-form-label text-lg-right"
-										for="Address"
-										>Address</label
-									>
-									<div class="col-lg-9">
-										<input
-											class="form-control text-box single-line"
-											data-val="true"
-											data-val-length="The field Address must be a string with a maximum length of 100."
-											data-val-length-max="100"
-											data-val-required="The Address field is required."
-											id="Address"
-											name="Address"
-											type="text"
-											value=""
-										/>
-										<span
-											class="field-validation-valid"
-											data-valmsg-for="Address"
-											data-valmsg-replace="true"
-										></span>
-									</div>
-								</div>
-								<div class="form-group row">
-									<label
-										class="col-lg-3 col-form-label text-lg-right"
+								
+										<label
+										
 										for="MobileNo"
-										>Mobile No.</label
-									>
-									<div class="col-lg-9">
-										<div class="input-group mimic-input">
-											<span class="input-group-addon">+63</span>
-											<input
-												class="form-control text-box single-line"
-												data-val="true"
-												data-val-length="The field Mobile No. must be a string with a minimum length of 10 and a maximum length of 10."
-												data-val-length-max="10"
-												data-val-length-min="10"
-												data-val-regex="The field Mobile No. must be a number with exactly 10 digits."
-												data-val-regex-pattern="^[0-9]{10}$"
-												data-val-required="The Mobile No. field is required."
-												id="MobileNo"
-												name="MobileNo"
-												type="text"
-												value=""
-											/>
-										</div>
-										<span
-											class="field-validation-valid"
-											data-valmsg-for="MobileNo"
-											data-valmsg-replace="true"
-										></span>
-									</div>
-								</div>
-								<div class="form-group row">
-									<label
-										class="col-lg-3 col-form-label text-lg-right"
-										for="EmailAddress"
-										>Email Address</label
-									>
-									<div class="col-lg-9">
+										>Mobile Number</label
+									><div class="input-group mimic-input">
+										<span class="input-group-addon">+63</span>
 										<input
 											class="form-control text-box single-line"
 											data-val="true"
-											data-val-email="The Email Address field is not a valid e-mail address."
-											data-val-length="The field Email Address must be a string with a maximum length of 100."
-											data-val-length-max="100"
-											data-val-required="The Email Address field is required."
-											id="EmailAddress"
-											name="EmailAddress"
-											type="email"
+											data-val-length="The field Mobile No. must be a string with a minimum length of 10 and a maximum length of 10."
+											data-val-length-max="10"
+											data-val-length-min="10"
+											data-val-regex="The field Mobile No. must be a number with exactly 10 digits."
+											data-val-regex-pattern="^[0-9]{10}$"
+											data-val-required="The Mobile No. field is required."
+											id="MobileNo"
+											name="MobileNo"
+											type="text"
 											value=""
+											placeholder="94646901231"
 										/>
-										<span
-											class="field-validation-valid"
-											data-valmsg-for="EmailAddress"
-											data-valmsg-replace="true"
-										></span>
 									</div>
-								</div>
-								<div class="form-group row">
-									<label
-										class="col-lg-3 col-form-label text-lg-right"
-										for="Gender"
-										>Gender</label
-									>
-									<div class="col-lg-9">
-										<div class="checkbox">
-											<div class="form-control mimic-input">
-												<table>
-													<tbody>
-														<tr>
-															<td>
-																<label
-																	><input
-																		type="radio"
-																		name="Gender"
-																		value="true"
-																		checked=""
-																	/>
-																	Male</label
-																>
-															</td>
-															<td>
-																<label
-																	><input
-																		type="radio"
-																		name="Gender"
-																		value="false"
-																	/>
-																	Female</label
-																>
-															</td>
-														</tr>
-													</tbody>
-												</table>
-											</div>
-											<span
-												class="field-validation-valid"
-												data-valmsg-for="Gender"
-												data-valmsg-replace="true"
-											></span>
-										</div>
-									</div>
+									<span
+										class="field-validation-valid"
+										data-valmsg-for="MobileNo"
+										data-valmsg-replace="true"
+									></span>
+								
 								</div>
 							</div>
 						</div>

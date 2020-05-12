@@ -1,0 +1,871 @@
+/* overriding default bootstrap behaviors */
+
+body {
+    font-size: 13px;
+    /*background-color: white;*/
+    background-image: none;
+}
+
+input, select, textarea, .mimic-input {
+    max-width: 340px; /*280px;*/
+}
+
+input.form-control, select:not([size]).form-control, div.mimic-input {
+    height: 37px !important;
+}
+
+input, select, textarea, label, .btn, #BodyContent button {
+    font-family: inherit !important;
+    font-size: inherit !important;
+}
+
+input[type=checkbox], input[type=radio] {
+    position: relative;
+    top: 2px;
+}
+
+select option:first-child {
+    color: silver;
+}
+
+button, .btn {
+    cursor: pointer;
+}
+
+#BodyContent a {
+    cursor: pointer;
+    color: steelblue;
+}
+
+#BodyContent a:hover {
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+/* Custom */
+
+.text-blue {
+	color: #172952;
+}
+
+.text-light {
+    color: gainsboro;
+}
+
+.text-light:hover {
+    color: white;
+    text-decoration: none;
+}
+
+#ud-home-bg {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: -1;
+    background-image: url('../../images/docheaderimg.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    /*background-size: 638px 356px;*/ /*contain*/
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    max-width: 638px;
+    max-height: 356px;
+}
+
+.card.no-border {
+    border: 0 none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* Emil's UD steps */
+
+/*#ud-steps div {
+    border: 1px solid red;
+}*/
+
+.ud-step-row {
+    margin-top: 40px;
+}
+
+.ud-step-row span {
+    font-size: 20px;
+}
+
+.ud-step-num {
+    height: 40px;
+    width: 40px;
+    background-color: #172952;
+    color: #fff;
+    font-size: 23px;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding-top: 2px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.ud-step-img {
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    background-size: contain;
+}
+
+#ud-step-img-1 {
+    background-image: url('../images/patientstep-01.png');
+}
+
+#ud-step-img-2 {
+    background-image: url('../images/patientstep-02.png');
+    margin-right: 10px;
+}
+
+#ud-step-img-3 {
+    background-image: url('../images/patientstep-03.png');
+    margin-right: 10px;
+}
+
+/* end Emil's UD steps */
+
+
+.ima-link {
+    color: steelblue !important;
+}
+
+.ima-link:hover {
+    color: deepskyblue !important;
+}
+
+#ud-logo {
+    width: 188px;
+    height: 50px;
+    filter: drop-shadow(0px 0px 9px white);
+    -webkit-filter: drop-shadow(0px 0px 9px white);
+}
+
+#ud-home-slogan {
+    text-shadow: 2px 2px 9px white, -2px -2px 9px white;
+}
+
+/*#ud-logo a {
+    display: block;
+    width: 188px;
+    height: 50px;
+    background-image: url('../images/navbarlogo-blue.png');
+    background-repeat: no-repeat;
+    text-shadow: 5px 5px 10px white;
+    box-shadow: 5px 5px white;
+}
+
+#ud-logo a span {
+	display: none;
+}*/
+
+/*#ud-tagline{
+	margin-top: 100px;
+	margin-bottom: 80px;
+}*/
+
+#ud-title-steps{
+	margin-top: 50px; font-size: 36px;
+}
+
+#ud-beta-logo {
+    position: absolute;
+    top: 25px;
+    left: 110px;
+    color: orange;
+    font-size: small;
+    font-style: italic;
+}
+
+#benefits-row{
+	padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.benefit-img{
+	margin-bottom: 10px;
+}
+
+#ud-steps {
+    background-color: #D6E0ED;
+    background-image: url('../images/stepsmainimg.png');
+	background-repeat: no-repeat;
+	background-position: bottom left;
+    background-size: contain;
+}
+
+/*#ud-step-image {
+    background-image: url('../images/stepsmainimg.png');
+	background-repeat: no-repeat;
+	background-position: left 40px;
+}*/
+
+#ud-lists{
+	background-color: #ECECEC;
+	padding-bottom: 60px;
+}
+
+#ud-lists h3{ 
+	font-size: 36px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#ud-lists h4{ 
+	text-transform: uppercase;
+}
+
+#ud-lists ul{
+	list-style: none; padding-left: 0;
+}
+
+#ud-lists ul li{
+	font-size: 18px;
+}
+
+#ud-lists ul li a{
+	color: #172952;
+}
+
+#ud-doc-benefits{
+	margin-bottom: 80px;
+}
+
+#ud-doc-benefits h3{
+	font-size: 36px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+#ud-benefits-subtitle{
+	font-size: 32px;
+	font-weight: normal;
+}
+
+#ud-doc-benefits a.btn{
+	font-size: 24px !important; text-transform: uppercase;
+}
+
+.doc-benefit-img{
+	margin-bottom: 10px;
+}
+
+#ud-footer{
+	padding-top: 20px; padding-bottom: 50px;
+	background-color: #172952; 
+}
+
+#ud-footer p{
+	font-size: 18px;
+}
+
+#ud-footer p a{
+	color: #fff;
+}
+
+
+.ud-clock-lg {
+    color: cornflowerblue;
+    font-size: 1.3em;
+    margin-top: 4px;
+    margin-right: 10px;
+}
+
+.ud-clock-sm {
+    display: inline-block;
+    position: relative;
+    color: cornflowerblue;
+    font-size: 1em;
+    top: 3px;
+    left: 10px;
+}
+
+.ud-clock-lg sup, .ud-clock-sm > sup {
+    font-size: .6em;
+}
+
+.ud-appcount {
+    font-size: .5em;
+    position: absolute;
+    top: 2px;
+    left: 38px;
+}
+
+.ud-linklist > a {
+    display: block;
+    margin-top: 10px;
+    color: steelblue !important;
+}
+
+.ud-linklist > a.ima-link:hover {
+    color: deepskyblue !important;
+}
+
+.ud-thumbnail {
+    height: 95px;
+    width: 95px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-color: darkgray;*/
+    border: 1px outset;
+    border-radius: 40px;
+}
+
+.ud-thumbnail div {
+    height: 50%;
+    text-shadow: 1px 1px 1px gray;
+}
+
+.ud-thumbnail .ud-favorite {
+    display: block;
+    text-align: right;
+    /*color: limegreen !important;*/
+    font-size: 1.5em;
+}
+
+.ud-thumbnail .ud-moreinfo {
+    display: block;
+    margin-left: -3px;
+    margin-top: 23px;
+    text-align: center;
+    color: #eaeaea !important;
+    font-size: 0.9em;
+}
+
+.ud-thumbnail a.ud-moreinfo:hover {
+    color: white !important;
+}
+
+.ud-thumbnail-x {
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-color: darkgray;*/
+    border-radius: 40px 0px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.ud-thumbnail-y {
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-color: darkgray;*/
+    border-radius: 0px 40px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.ud-soon td {
+    background-color: lightyellow;
+}
+
+.ud-near td {
+    background-color: lightsalmon;
+    font-weight: 500;
+}
+
+.ud-over td {
+    background-color: lightgrey;
+    color: whitesmoke;
+}
+
+/* Layout */
+
+.navbar {
+    background-color: #162952;
+    box-shadow: 0px 3px 6px rgba(20, 20, 20, .4);
+}
+
+.navbar-brand {
+    padding: 1px 0px 3px 0px;
+}
+
+.navbar-brand img {
+    height: 32px;
+    width: 128px;
+}
+
+.navbar-toggler {
+    cursor: pointer;
+}
+
+#HeadBuffer {
+    height: 54px;
+    /*background-color: red;*/
+}
+
+#FootBuffer {
+    height: 32px;
+}
+
+footer {
+    border-top: 1px solid gainsboro;
+    background-color: rgba(60, 80, 100, .3);
+}
+
+#Footer {
+    color: white;
+    font-size: x-small;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+#PageLoader {
+    display: none;
+    background-color: white;
+    opacity: .8;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px;
+    text-align: center;
+    font-weight: 500;
+
+    position: fixed;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    height: 120px;
+    width: 120px;
+    margin: -60px 0px 0px -60px;
+    padding-top: 28px;
+}
+
+#InvalidMsg {
+    display: none;
+    color: white;
+    background-color: indianred;
+    opacity: .8;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px gray;
+    text-align: center;
+    font-weight: 500;
+
+    position: fixed;
+    z-index: 9999;
+    top: 80px;
+    left: 50%;
+    height: 50px;
+    width: 240px;
+    margin-left: -120px;
+    padding-top: 15px;
+}
+
+/* Titles */
+
+.content-header {
+    margin-top: 15px;
+    color: aliceblue;
+    font-weight: 500;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+}
+
+.title-primary {
+    font-size: 1.6em;
+}
+
+.title-secondary {
+    font-size: 1.1em;
+}
+
+.content-header > hr {
+    border: 0;
+    height: 1px;
+    background-color: #444;
+    background: linear-gradient(to right, #ccc, #444, #ccc);
+    margin-top: 12px;
+}
+
+/* Bootstrap Modal */
+
+.modal-content.bg-info {
+    background-color: steelblue;
+    background: linear-gradient(steelblue, white, lightgoldenrodyellow);
+}
+
+.modal-content.bg-warning {
+    background-color: indianred;
+    background: linear-gradient(indianred, white, lightgoldenrodyellow);
+}
+
+.modal-content.bg-help {
+    background-color: mediumseagreen;
+    background: linear-gradient(mediumseagreen, white, lightgoldenrodyellow);
+}
+
+.modal-header {
+    color: ghostwhite;
+    text-shadow: 1px 1px gray;
+    font-size: 2em;
+}
+
+.modal-body {
+    background-color: white;
+}
+
+.modal-body .form-group:last-child {
+    margin-bottom: 0px;
+}
+
+.modal-footer {
+    margin-top: 0px;
+}
+
+/* Data Tables */
+
+.table {
+    border: 1px solid gainsboro;
+    margin: 0px;
+    background-color: white;
+}
+
+.table thead {
+    background-color: khaki;
+    color: #234;
+}
+
+.table td:last-child {
+    white-space: nowrap;
+}
+
+/*.table tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #fafaff;
+}*/
+
+/* Form Elements */
+
+.mimic-input table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.mimic-input table td {
+    font-size: .8em;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.mimic-input label {
+    margin: 0px;
+}
+
+/*.mimic-input input[type=radio] {
+    vertical-align: middle;
+}*/
+
+.mimic-input span {
+    font-size: 1em;
+}
+
+.field-validation-error, .field-validation-valid {
+    font-size: .85em;
+    font-weight: 500;
+    color: #c94a48;
+}
+
+.input-validation-error {
+    box-shadow: 0px 0px 5px orange;
+}
+
+/* Tab Pages */
+
+.nav-tabs a {
+    background-color: gainsboro;
+    color: white !important;
+    font-weight: 500;
+}
+
+.nav-tabs a:hover {
+    color: dimgray !important;
+}
+
+.nav-tabs a.active {
+    font-weight: bold;
+    color: inherit !important;
+}
+
+.tab-content {
+    border: 1px solid gainsboro;
+    border-top: 0px;
+    padding: 10px;
+}
+
+.tab-pane {
+    margin-top: 10px;
+}
+
+/* Home */
+
+#CarouselIntro {
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 3px;
+}
+
+.ud-carousel-border {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+.ud-carousel-filler {
+    height: 200px;
+}
+
+.ud-carousel-filler-lg {
+    height: 360px;
+}
+
+.carousel-item {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption {
+    text-shadow: 1px 1px gray;
+}
+
+.carousel-caption > div {
+    border: 4px solid white;
+    border-radius: 15px;
+    height: 60px;
+    width: 66px;
+    margin: 0px auto 10px auto;
+    font-size: 2.25em;
+}
+
+.carousel-caption > p {
+    font-size: 1.2em;
+}
+
+.ud-home-slogan {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+
+    color: aliceblue;
+    font-size: 2.5em;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgba(20,20,20,0.4);
+
+    /*opacity: 0.75;*/
+}
+
+.ud-home-betasash {
+    position: absolute;
+    z-index: 999;
+    height: 100px;
+    width: 100px;
+    top: -11px;
+    left: -11px;
+}
+
+.ud-home-searchpanel input, .ud-home-searchpanel select, .ud-home-searchpanel button {
+    max-width: 100%;
+    width: 100%;
+}
+
+.ud-home-searchpanel button {
+    height: 35px !important;
+    margin-top: 1px;
+}
+
+.ud-home-searchpanel > div {
+    margin-bottom: 5px;
+}
+
+/* Doc Search */
+
+.ud-tablelabel {
+    max-width: 340px;
+}
+
+.ud-tablelabel td {
+    width: 100%;
+    white-space: nowrap;
+}
+
+.ud-searchrow {
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+}
+
+#LocIcon {
+    position: relative;
+}
+
+#BanIcon {
+    position: absolute;
+    top: -0.15em;
+    left: -0.2em;
+    font-size: 1.25em;
+    color: rgba(255, 40, 40, 0.7);
+}
+
+#SearchResults hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(40, 40, 40, 0), rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0));
+}
+
+#MapResults {
+    width: 100%;
+    height: 320px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+#NoResultImage {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#SelectSchedule {
+    margin-top: 15px;
+}
+
+#SelectSchedule td {
+    width: 88px;
+    min-width: 88px;
+    text-align: center;
+}
+
+#SelectSchedule tbody tr {
+    height: 45px;
+}
+
+#SelectSchedule tbody a {
+    display: block;
+    color: steelblue !important;
+}
+
+#SelectSchedule tbody a:hover {
+    color: deepskyblue !important;
+}
+
+#SelectSchedule tbody span {
+    display: block;
+    color: gray;
+    text-decoration: line-through;
+}
+
+#Sched_AM {
+    background: linear-gradient(#fffff0, white);
+}
+
+#Sched_PM {
+    background: linear-gradient(white, #f8f8ff);
+}
+
+#DocTab1, #DocTab2, #ClinicTab1, #ClinicTab2 {
+    height: 244px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#DocTab1 dl, #ClinicTab1 dl {
+    margin-bottom: 2px;
+}
+
+#ClinicPics {
+    text-align: center;
+}
+
+#ClinicPics > div {
+    display: inline-block;
+}
+
+#ClinicSchedule {
+    margin: auto;
+}
+
+#ClinicSchedule th, #ClinicSchedule td {
+    border: 1px solid gray;
+    width: 10%;
+    text-align: center;
+    padding: 3px;
+}
+
+#ClinicSchedule th {
+    font-weight: 500;
+    background-color: ghostwhite;
+}
+
+#ClinicSchedule th:first-child {
+    width: 30% !important;
+}
+
+#CostTable {
+    margin: auto;
+    text-align: right;
+}
+
+#CostTable td:first-child {
+    width: 130px;
+    padding: 2px 25px 5px 0px;
+}
+
+#CostTable td:last-child {
+    width: 70px;
+    padding: 2px 0px 5px 0px;
+}
+
+#GoTopBtn {
+    position: fixed;
+    z-index: 250;
+    bottom: 40px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: steelblue;
+    color: white;
+    font-size: 1.25em;
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer;
+    opacity: .5;
+    display: none;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, .5);
+}
+
+#GoTopBtn:hover {
+    opacity: 1;
+}
+
+#mapHomeLoc {
+    width: 100%;
+    height: 240px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+#labelHomeLoc {
+    position: absolute;
+    top: 207px;
+    left: 16px;
+    z-index: 400;
+    padding: 0px 4px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: smaller;
+    font-weight: bold;
+}
