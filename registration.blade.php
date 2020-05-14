@@ -27,39 +27,39 @@
 							<div class="col-md-4 col-sm-3"></div>
 							<div class="col-md-4 col-sm-3">
 								<div class="form-group row">
-									{Form::label('firstName', 'First Name:') } <!-- label of first name -->
-									{ Form::text('firstName', $value = null, ['class' => 'form-control text-box single-line', 'placeholder' => 'First Name']) }	
+									{{ Form::label('firstName', 'First Name:') }} <!-- label of first name -->
+									{{ Form::text('firstName', $value = null, ['class' => 'form-control text-box single-line', 'placeholder' => 'First Name']) }}	
 								</div>
 								<div class="form-group row">
-									{ Form::label('middleName', 'Middle Name:') }
-									{ Form::text('middleName', $value = null, ['class' => 'form-control text-box single-line', 'placeholder' => 'Middle Name']) }	
+									{{ Form::label('middleName', 'Middle Name:') }}
+									{{ Form::text('middleName', $value = null, ['class' => 'form-control text-box single-line', 'placeholder' => 'Middle Name']) }}	
 								</div>
 								<div class="form-group row">
-									{ Form::label('familyName', 'Family Name:') }
-									{ Form::text('familyName', $value = null, ['class' => 'form-control text-box single-line', 'placeholder' => 'Middle Name']) }
+									{{ Form::label('familyName', 'Family Name:') }}
+									{{ Form::text('familyName', $value = null, ['class' => 'form-control text-box single-line', 'placeholder' => 'Middle Name']) }}
 								</div>
 
 								<div class="form-group row">
-									{ Form::label('email', 'Email:') }
-									{ Form::email('email', $value = null, ['class' => 'form-control  text-box single-line', 'placeholder' => 'email@rocketmail.com']) }
+									{{ Form::label('email', 'Email:') }}
+									{{ Form::email('email', $value = null, ['class' => 'form-control  text-box single-line', 'placeholder' => 'email@rocketmail.com']) }}
 								</div>
 								<div class="form-group row">
-									{ Form::label('mobileNo', 'Mobile Number:') }
+									{{ Form::label('mobileNo', 'Mobile Number:') }}
 									<label for="MobileNo">Mobile Number</label>
 									<div class="input-group mimic-input">
 										<span class="input-group-addon">+63</span>
-										{ Form::text('mobileNo', $value = null, ['class' => 'form-control text-box single-line', 'placeholder' => 'ex.9501111111']) }
+										{{ Form::text('mobileNo', $value = null, ['class' => 'form-control text-box single-line', 'placeholder' => 'ex.9501111111']) }}
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="form-check text-center pb-2">
-						{ Form::checkbox('terms-and-services',['class'=> 'form-check-input']) } <!-- checkbox -->
-						{ Form::label('terms-and-services','I have read and agree on the
+						{{ Form::checkbox('terms-and-services',['class'=> 'form-check-input']) }} <!-- checkbox -->
+						{{ Form::label('terms-and-services','I have read and agree on the
 								<a href="#" data-toggle="modal" data-target="#modalTerms"
 									>Terms and Services</a
 								>
-								of the meDPulse website.') }
+								of the meDPulse website.') }}
 							<!-- Modal -->
 							<div
 								class="modal fade"
@@ -154,8 +154,8 @@
 							</div>
 						</div>
 						<div class="text-center">
-						{ Form::submit('Submit', ['class' => 'btn btn-primary'] ) }
-						{ Form::submit('Cancel', ['class' => 'btn btn-primary'] ) }
+						{{ Form::submit('Submit', ['class' => 'btn btn-primary'] ) }}
+						{{ Form::submit('Cancel', ['class' => 'btn btn-primary'] ) }}
 								<button type="submit" class="btn btn-primary" id="BtnSubmit">
 									Submit
 								</button>
@@ -163,7 +163,7 @@
 									Cancel
 								</button>
 						</div>
-					{!! Form::close() !!}
+					{!! Form::close()!! }
 				</div>
 			</div>
 			
