@@ -54,8 +54,8 @@
 							</div>
 						</div>
 						<div class="form-check text-center pb-2">
-						{{ Form::checkbox('terms-and-services',['class'=> 'form-check-input']) }} <!-- checkbox -->
-						{{ Form::label('terms-and-services','I have read and agree on the
+							{{ Form::checkbox('terms-and-services',['class'=> 'form-check-input']) }} <!-- checkbox -->
+							{{ Form::label('terms-and-services','I have read and agree on the
 								<a href="#" data-toggle="modal" data-target="#modalTerms"
 									>Terms and Services</a
 								>
@@ -75,14 +75,6 @@
 											<h5 class="modal-title" id="exampleModalLongTitle">
 												Terms and Services
 											</h5>
-											<button
-												type="button"
-												class="close"
-												data-dismiss="modal"
-												aria-label="Close"
-											>
-												<span aria-hidden="true">&times;</span>
-											</button>
 										</div>
 										<div class="modal-body">
 											<h5 class="pb-3">
@@ -141,13 +133,7 @@
 											</div>
 										</div>
 										<div class="modal-footer">
-											<button
-												type="button"
-												class="btn btn-secondary"
-												data-dismiss="modal"
-											>
-												Close
-											</button>
+											{{ Form::submit('Close', ['class' => 'btn btn-primary', 'data-dismiss' => 'modal'] ) }}
 										</div>
 									</div>
 								</div>
@@ -156,12 +142,6 @@
 						<div class="text-center">
 						{{ Form::submit('Submit', ['class' => 'btn btn-primary'] ) }}
 						{{ Form::submit('Cancel', ['class' => 'btn btn-primary'] ) }}
-								<button type="submit" class="btn btn-primary" id="BtnSubmit">
-									Submit
-								</button>
-								<button type="submit" class="btn btn-primary" id="BtnCancel">
-									Cancel
-								</button>
 						</div>
 					{!! Form::close()!! }
 				</div>
