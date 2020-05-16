@@ -1,32 +1,25 @@
 			<!-- Start of registration body -->
+			<!-- update for registration blade #2 // added background gradient. -->
 			
 			<div
-				id="BodyContent"
-				class="container-fluid border border-light rounded shadow"
+				class="container-fluid bods py-5 "
 			>
-				<div class="container-fluid">
+				<div class="container border border-light rounded shadow">
 					<div class="content-header">
 						<div class="title-primary text-center pt-2">
-							<h3>
-								<i class="fa fa-user text-black-50" aria-hidden="true"
-									>Pre-Register Now to access the meDPulse!</i
-								>
-							</h3>
+						<h3>Registration</h3>
+						<img src="images/logo-sm.png" alt="">
+						
+							
 						</div>
 						<hr />
 					</div>
-
-					{!! Form::open(['url' => 'foo/bar']) !!}
-
-
-
-           
-
-					
 						<div class="row">
 							<div class="col-md-4 col-sm-3"></div>
 							<div class="col-md-4 col-sm-3">
+					{!! Form::open(['url' => 'foo/bar']) !!}
 								<div class="form-group row">
+							
 									{{ Form::label('firstName', 'First Name:') }} <!-- label of first name -->
 									{{ Form::text('firstName', $value = null, ['class' => 'form-control text-box single-line', 'placeholder' => 'First Name']) }}	
 								</div>

@@ -1,8 +1,8 @@
 <!-- Header class must be in a container-fluid or let it be-->
 
-<!-- universal navbar for meDPulse web -->
-<nav
-				class="navbar navbar-expand-xl navbar-light navbar-toggleable-lg navbar-inverse"
+<!-- universal navbar for meDPulse web --> <!-- updated with gradient background and fonts -->
+			<nav
+				class="navbar navbar-expand-xl navbar-toggleable-lg navbar-inverse nab"
 			    >
 				<a class="navbar-brand" href="index.html"
 					><img src="images/logo-sm.png" alt=""
@@ -16,30 +16,30 @@
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 				>
-					<span class="navbar-toggler-icon"></span>
+					<span class="navbar-toggler-icon"><i class="fa fa-bars" style="color:#fff; font-size:28px;"></i></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="nav-item">
-							<a class="nav-link fa fa-search-plus" href="index.html"> Search</a>
+						<li class="nav-item navi">
+							<a class="nav-link" id="hov" href="index.html"> <i class=" fa fa-search-plus "></i> Search</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link fa fa-calendar" href="#"> Appoinments</a>
+						<li class="nav-item navi">
+							<a class="nav-link " id="hov" href="#"> <i class="fa fa-calendar"></i> Appoinments</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link fa fa-envelope" href="#"> Chat</a>
+						<li class="nav-item navi">
+							<a class="nav-link" id="hov" href="#"> <i class=" fa fa-envelope"></i> Chat</a>
                         </li>
-                        <li class="nav-item">
-							<a class="nav-link fa fa-history" href="#"> History</a>
+                        <li class="nav-item navi">
+							<a class="nav-link" id="hov" href="#"><i class=" fa fa-history"></i> History</a>
 						</li>
                     </ul>
                     <ul class="nav navbar-nav justify-content-lg-between ml-auto">
-                        <li class="nav-item">
-							<a class="nav-link fa fa-bell" href="#"> Notifications</a>
+                        <li class="nav-item navi">
+							<a class="nav-link" id="hov" href="#"><i class=" fa fa-bell"></i> Notifications</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle fa fa-cog" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Settings
+                        <li class="nav-item navi dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown hov" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="  fa fa-cog"></i> Settings
                             </a>
                             <div class="dropdown-menu dropdown-primary dropdown-menu-right" aria-labelledby="navbarDropdown">
                               <a class="dropdown-item" href="#">My Profile</a>
@@ -54,4 +54,3 @@
 				</div>
 			</nav>
 			<hr>
-            <!-- need suggestions on what to add or remove -->

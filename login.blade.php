@@ -1,13 +1,17 @@
 <!-- Start of login -->
-    	<div class="container-fluid">
-			<div class="container-fluid">
-				<div class="content-header">
-					<hr />
-                </div>
+    	<div class="container-fluid bods py-3">
+			<div class="container ">
+						
 			 
 				<div class="row">
 					<div class="col-md-4 col-sm-3"></div>
-					<div class="col-md-4 col-sm-3 border border-light shadow">
+					<div class="col-md-4 col-sm-3 border border-light rounded shadow py-5">
+					<div class="title-primary text-center">
+						<h3>Login</h3>
+							<img src="images/logo-sm.png" alt="">
+							
+							
+						</div>
 							{!! Form::open(['url' => 'foo/bar', 'class' => form-contain]) !!}
 						
 							<div class="form-group">

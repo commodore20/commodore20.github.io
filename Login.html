@@ -1,5 +1,25 @@
 <html>
 	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="images/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="images/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="images/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="images/site.webmanifest" />
 		<link rel="stylesheet" href="css/globalstyle.css" />
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -31,49 +51,89 @@
 	</head>
 
 	<body>
-		<div class="container-fluid">
-			<nav
-				class="navbar navbar-expand-xl navbar-light navbar-toggleable-lg navbar-inverse"
-				style="background-color:#fff;"
+		<nav
+			class="navbar navbar-expand-xl navbar-toggleable-lg navbar-inverse nab"
+		>
+			<a class="navbar-brand" href="index.html"
+				><img src="images/logo-sm.png" alt=""
+			/></a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNav"
+				aria-controls="navbarNav"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
 			>
-				<a class="navbar-brand" href="index.html"
-					><img src="images/logo-sm.png" alt=""
-				/></a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-toggle="collapse"
-					data-target="#navbarNav"
-					aria-controls="navbarNav"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="nav navbar-nav navbar-right">
-						<li class="nav-item">
-							<a class="nav-link fa fa-home" href="index.html"> Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link fa fa-info" href="#"> About</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link fa fa-user" href="Signup.html"> Sign-up</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link fa fa-book" href="Login.html"> Login</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-			<div class="container-fluid pt-2">
-				<div class="content-header">
-					<hr />
-				</div>
-				<div class="row">
-					<div class="col-md-4 col-sm-3"></div>
-					<div class="col-md-4 col-sm-3">
+				<span class="navbar-toggler-icon"
+					><i class="fa fa-bars" style="color: #fff; font-size: 28px;"></i
+				></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav navbar-right">
+					<li class="nav-item navi">
+						<a class="nav-link" href="index.html">
+							<i class="fa fa-search-plus"></i> Search</a
+						>
+					</li>
+					<li class="nav-item navi">
+						<a class="nav-link" href="#">
+							<i class="fa fa-calendar"></i> Appoinments</a
+						>
+					</li>
+					<li class="nav-item navi">
+						<a class="nav-link" href="#">
+							<i class="fa fa-envelope"></i> Chat</a
+						>
+					</li>
+					<li class="nav-item navi">
+						<a class="nav-link" href="#"
+							><i class="fa fa-history"></i> History</a
+						>
+					</li>
+				</ul>
+				<ul class="navbar-nav justify-content-lg-between ml-auto">
+					<li class="nav-item navi">
+						<a class="nav-link" href="#"
+							><i class="fa fa-bell"></i> Notifications</a
+						>
+					</li>
+					<li class="nav-item navi dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="navbarDropdown"
+							role="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+						>
+							<i class="fa fa-cog"></i> Settings
+						</a>
+						<div
+							class="dropdown-menu dropdown-primary dropdown-menu-right"
+							aria-labelledby="navbarDropdown"
+						>
+							<a class="dropdown-item" href="#">My Profile</a>
+							<a class="dropdown-item" href="#">Preferences</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Logout</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container-fluid bods py-3">
+			<div class="container"></div>
+			<div class="row">
+				<div class="col-md-4 col-sm-3"></div>
+				<div class="col-md-4 col-sm-3 border border-light rounded shadow py-5">
+					<div class="content-header">
+						<div class="title-primary text-center">
+							<h3>Login</h3>
+							<img src="images/logo-sm.png" alt="" />
+						</div>
 						<form class="form-contain">
 							<div class="form-group">
 								<label for="exampleInputEmail1">Email address</label>
@@ -94,20 +154,30 @@
 									placeholder="Password"
 								/>
 							</div>
-							<div class="form-check">
-								<input
-									type="checkbox"
-									class="form-check-input"
-									id="exampleCheck1"
-								/>
-								<label class="form-check-label" for="exampleCheck1"
-									>Remember Password</label
-								>
-								<p class="p-1"><a href="loginalternative.html">Forgot Your Password ?</a></p>
+							<div class="form-group justify-content-center">
+								<div class="form-check">
+									<input
+										type="checkbox"
+										class="form-check-input"
+										id="exampleCheck1"
+									/>
+									<label class="form-check-label" for="exampleCheck1"
+										>Remember Password</label
+									>
+									<p class="p-1">
+										<a href="loginalternative.html">Forgot Your Password ?</a>
+									</p>
+								</div>
+								<div class="text-center">
+									<button type="submit" class="btn btn-primary">
+										<i class="fa fa-sign-in"
+											><a href="main.html" style="text-decoration: none;"
+												>Submit</a
+											></i
+										>
+									</button>
+								</div>
 							</div>
-							<button type="submit" class="btn btn-primary">
-								<i class="fa fa-sign-in"> Submit</i>
-							</button>
 						</form>
 					</div>
 				</div>
