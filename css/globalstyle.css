@@ -405,7 +405,7 @@ select.form-control-lg:not([size]):not([multiple]) {
 }
 
 ul li a#hov {
-	transition: 0.4s ease;
+	transition: 0.3s ease;
 	font-size: 20px;
 	text-decoration: none;
 	border-top: 3px solid transparent;
@@ -415,7 +415,7 @@ ul li a#hov {
 	font-size: 17px;
 }
 ul li a#hov:hover {
-	padding: 2px 0;
+	padding: 4px 0;
 }
 
 .bods {
@@ -424,7 +424,31 @@ ul li a#hov:hover {
 		180deg,
 		rgba(186, 231, 250, 1) 0%,
 		rgba(246, 246, 246, 1) 15%,
-		rgba(242, 244, 245, 1) 86%,
+		rgba(242, 244, 245, 1) 85%,
 		rgba(186, 231, 250, 1) 100%
 	);
+}
+
+.fant {
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: bolder;
+}
+
+.dashbods {
+	background: rgb(51, 168, 217);
+	background: linear-gradient(
+		180deg,
+		rgba(51, 168, 217, 1) 0%,
+		rgba(246, 246, 246, 1) 7%,
+		rgba(237, 242, 244, 1) 94%,
+		rgba(51, 168, 217, 1) 100%
+	);
+}
+
+#dashboard-body {
+	background-color: rgb(240, 240, 240);
+}
+
+.sidebar-bg {
+	background-color: rgb(117, 164, 235);
 }

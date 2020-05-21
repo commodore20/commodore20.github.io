@@ -53,390 +53,158 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<nav
-			class="navbar navbar-expand-xl navbar-toggleable-lg navbar-inverse nab"
-		>
-			<a class="navbar-brand" href="index.html"
-				><img src="images/logo-sm.png" alt=""
-			/></a>
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarNav"
-				aria-controls="navbarNav"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<span class="navbar-toggler-icon"
-					><i class="fa fa-bars" style="color: #fff; font-size: 28px;"></i
-				></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="nav-item navi">
-						<a class="nav-link" id="hov" href="index.html">
-							<i class="fa fa-search-plus"></i> Search</a
-						>
-					</li>
-					<li class="nav-item navi">
-						<a class="nav-link" id="hov" href="#">
-							<i class="fa fa-calendar"></i> Appoinments</a
-						>
-					</li>
-					<li class="nav-item navi">
-						<a class="nav-link" id="hov" href="#">
-							<i class="fa fa-envelope"></i> Chat</a
-						>
-					</li>
-					<li class="nav-item navi">
-						<a class="nav-link" id="hov" href="#"
-							><i class="fa fa-history"></i> History</a
-						>
-					</li>
-				</ul>
-				<ul class="nav navbar-nav justify-content-lg-between ml-auto">
-					<li class="nav-item navi">
-						<a class="nav-link" id="hov" href="#"
-							><i class="fa fa-bell"></i> Notifications</a
-						>
-					</li>
-					<li class="nav-item navi dropdown">
-						<a
-							class="nav-link dropdown-toggle"
-							href="#"
-							id="navbarDropdown hov"
-							role="button"
-							data-toggle="dropdown"
-							aria-haspopup="true"
-							aria-expanded="false"
-						>
-							<i class="fa fa-cog"></i> Settings
-						</a>
-						<div
-							class="dropdown-menu dropdown-primary dropdown-menu-right"
-							aria-labelledby="navbarDropdown"
-						>
-							<a class="dropdown-item" href="#">My Profile</a>
-							<a class="dropdown-item" href="#">Preferences</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Logout</a>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<div class="container-fluid bods py-5">
-			<div class="container border border-light rounded shadow">
+		<div class="container-fluid dashbods fant py-3">
+			<div class="container border rounded shadow-sm px-5">
 				<div class="content-header">
-					<div class="title-primary text-center pt-2">
-						<h3>
-							<i class="fa fa-user text-black-50" aria-hidden="true"
-								>Pre-Register Now to access the meDPulse!</i
-							>
+					<div class="title-primary">
+						<h3 class="text-center">
+							<i class="fa fa-calendar-times-o"> </i>
+							Recent Appointments
 						</h3>
 					</div>
-					<hr />
-				</div>
-				<div
-					class="validation-summary-valid text-danger"
-					data-valmsg-summary="true"
-				>
-					<ul>
-						<li style="display: none;"></li>
-					</ul>
-				</div>
-
-				<form action="/Home/SignUp" method="post" novalidate="novalidate">
-					<input
-						name="__RequestVerificationToken"
-						type="hidden"
-						value="_P3ZS1Yn9KKCCjyUZsjhV79StR6ivsNL9MkYrxSVyNgdUlFBicRzpcngccT87TxFNuVizqSLs3py6FoUh4EYTg86W74GCKC-G5YGcqmvm9o1"
-					/>
 					<div class="row">
-						<div class="col-md-4 col-sm-3"></div>
-						<div class="col-md-4 col-sm-3">
-							<div class="form-group row">
-								<label for="FirstName">First Name</label>
-								<input
-									class="form-control text-box single-line"
-									data-val="true"
-									data-val-length="The field First Name must be a string with a maximum length of 40."
-									data-val-length-max="40"
-									data-val-required="The First Name field is required."
-									id="FirstName"
-									name="FirstName"
-									type="text"
-									value=""
-								/>
-								<span
-									class="field-validation-valid"
-									data-valmsg-for="FirstName"
-									data-valmsg-replace="true"
-								></span>
-							</div>
-							<div class="form-group row">
-								<label for="MiddleName">Middle Name</label>
-
-								<input
-									class="form-control text-box single-line"
-									data-val="true"
-									data-val-length="The field Middle Name must be a string with a maximum length of 25."
-									data-val-length-max="25"
-									data-val-required="The Middle Name field is required."
-									id="MiddleName"
-									name="MiddleName"
-									placeholder="put 'N/A' if not applicable"
-									type="text"
-									value=""
-								/>
-								<span
-									class="field-validation-valid"
-									data-valmsg-for="MiddleName"
-									data-valmsg-replace="true"
-								></span>
-							</div>
-							<div class="form-group row">
-								<label for="LastName">Last Name</label>
-
-								<input
-									autofocus=""
-									class="form-control text-box single-line"
-									data-val="true"
-									data-val-length="The field Last Name must be a string with a maximum length of 25."
-									data-val-length-max="25"
-									data-val-required="The Last Name field is required."
-									id="LastName"
-									name="LastName"
-									type="text"
-									value=""
-								/>
-								<span
-									class="field-validation-valid"
-									data-valmsg-for="LastName"
-									data-valmsg-replace="true"
-								></span>
-							</div>
-
-							<div class="form-group row">
-								<label for="email">Email</label>
-
-								<input
-									class="form-control text-box single-line"
-									data-val="true"
-									id="email"
-									name="email"
-									placeholder="edit@gmail.com"
-									type="text"
-									value=""
-								/>
-								<span
-									class="field-validation-valid"
-									data-valmsg-for="email"
-									data-valmsg-replace="true"
-								></span>
-							</div>
-							<div class="form-group row">
-								<label for="MobileNo">Mobile Number</label>
-								<div class="input-group mimic-input">
-									<span class="input-group-addon">+63</span>
-									<input
-										class="form-control text-box single-line"
-										data-val="true"
-										data-val-length="The field Mobile No. must be a string with a minimum length of 10 and a maximum length of 10."
-										data-val-length-max="10"
-										data-val-length-min="10"
-										data-val-regex="The field Mobile No. must be a number with exactly 10 digits."
-										data-val-regex-pattern="^[0-9]{10}$"
-										data-val-required="The Mobile No. field is required."
-										id="MobileNo"
-										name="MobileNo"
-										type="text"
-										value=""
-										placeholder="94646901231"
-									/>
-								</div>
-								<span
-									class="field-validation-valid"
-									data-valmsg-for="MobileNo"
-									data-valmsg-replace="true"
-								></span>
-							</div>
+						<div class="table-responsive-md col-md-12">
+							<table class="table table-hover table-bordered table">
+								<thead class="table-info">
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">Clinic Name</th>
+										<th scope="col">Name of the Doctor</th>
+										<th scope="col">Remarks</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>St. Jude Clinic</td>
+										<td>Otto Sotto</td>
+										<td>Follow up checkup after 3 days</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>Bansalan Clinic</td>
+										<td>Jon Bovi</td>
+										<td>Finished</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>St. Therese Clinic</td>
+										<td>Ma. Jessa Conception</td>
+										<td>Cancelled</td>
+									</tr>
+									<tr>
+										<th scope="row">4</th>
+										<td>Xiao Xiu Clinic</td>
+										<td>Tang San</td>
+										<td>Finished</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
-					<input type="hidden" name="LoginPassword" value="Temp1234" />
-					<input type="hidden" name="SecAnswer" value="Temp1234" />
-					<div class="form-check text-center pb-2">
-						<input
-							type="checkbox"
-							class="form-check-input"
-							id="terms-and-services"
-						/>
-						<label class="form-check-label" for="terms-and-services"
-							>I have read and agree on the
-							<a href="#" data-toggle="modal" data-target="#modalTerms"
-								>Terms and Services</a
-							>
-							of the meDPulse website.
-						</label>
-						<!-- Modal -->
-						<div
-							class="modal fade"
-							id="modalTerms"
-							tabindex="-1"
-							role="dialog"
-							aria-labelledby="exampleModalLongTitle"
-							aria-hidden="true"
-						>
-							<div class="modal-dialog" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title" id="exampleModalLongTitle">
-											Terms and Services
-										</h5>
-										<button
-											type="button"
-											class="close"
-											data-dismiss="modal"
-											aria-label="Close"
-										>
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<h5 class="pb-3">
-											By Signing-up on this Virtual Medical Mission through
-											E-consultation platform, I hereby undertake, agree and
-											consent on the following:
-										</h5>
-										<div class="container">
-											<p>
-												1. I hereby agree that my personal information be
-												collected only for a legitimate purpose and that the
-												same is processed fairly and lawfully;
-											</p>
-											<p>
-												2. I hereby undertake to provide accurate, relevant
-												personal and sensitive information and, where necessary
-												for purposes for which it is to be used the processing
-												of personal information, be kept up to date;
-											</p>
-											<p>
-												3. I hereby consent to the processing of my personal
-												information and that the same is a vital interest on my
-												life and health;
-											</p>
-											<p>
-												4. I hereby agree that the processing is necessary for
-												the purposes of the legitimate interests pursued by the
-												personal information controller (in this case the
-												attending physician) or by a third party or parties to
-												whom the data is disclosed, except where such interests
-												are overridden by fundamental rights and freedoms of the
-												data subject which require protection under the
-												Philippine Constitution;
-											</p>
-											<p>
-												5. I hereby consent to the processing of my sensitive
-												personal information as well as the privileged
-												information involving the
-												<strong
-													>Doctor-Patient relationship under Rule 130, section
-													24, paragraph (c) of the Rules of Court</strong
-												>, the processing of which is necessary for purposes of
-												medical treatment, and that I am aware that an adequate
-												level of protection of my personal information is
-												ensured;
-											</p>
-											<p>
-												6. I hereby agree to be bound by the rights of a data
-												subject under section 16 of
-												<strong
-													>Republic Act No. 10173 otherwise known as "Data
-													Privacy Act of 2012"</strong
-												>.
-											</p>
-										</div>
-									</div>
-									<div class="modal-footer">
-										<button
-											type="button"
-											class="btn btn-secondary"
-											data-dismiss="modal"
-										>
-											Close
-										</button>
-									</div>
-								</div>
-							</div>
+				</div>
+
+				<div class="row">
+					<div
+						class="col-md-12 border rounded shadow-sm py-3 table-responsive-md"
+					>
+						<h3 class="text-center">
+							<i class="fa fa-exclamation-circle"> </i>
+							Notifications
+						</h3>
+
+						<div class="alert alert-info alert-dismissable">
+							<a class="panel-close close" data-dismiss="alert">×</a> Your
+							appointment to Doctor Kuack has been <strong>approved</strong>.
 						</div>
+						<table class="table table-hover table-striped">
+							<tbody>
+								<tr>
+									<td>
+										<span class="float-right font-weight-bold">3 hrs ago</span>
+										Here is your a link to the latest summary report from the..
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="float-right font-weight-bold">Yesterday</span>
+										There has been a request on your account since that was..
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="float-right font-weight-bold">9/10</span>
+										You have successfully finished your appointment last
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="float-right font-weight-bold">9/4</span>
+										You have cancelled your appointment, please enter a valid
+										reason
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="float-right font-weight-bold">9/4</span>
+										Dr. Medina wants you to have a follow up check up this May
+										26
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<div class="text-center">
-						<p>
-							<button type="submit" class="btn btn-primary" id="BtnSubmit">
-								Submit
-							</button>
-							<button type="submit" class="btn btn-primary" id="BtnCancel">
-								Cancel
-							</button>
-						</p>
-					</div>
-				</form>
-			</div>
-		</div>
-		<div class="container-fluid bods py-3">
-			<div class="container"></div>
-			<div class="row">
-				<div class="col-md-4 col-sm-3"></div>
-				<div class="col-md-4 col-sm-3 border border-light rounded shadow py-5">
-					<div class="content-header">
-						<div class="title-primary text-center">
-							<h3>Login</h3>
-							<img src="images/logo-sm.png" alt="" />
+				</div>
+				<div class="row">
+					<div
+						class="col-md-12 border rounded shadow-sm pt-3 table-responsive-md"
+					>
+						<h3 class="text-center">
+							<i class="fa fa-bookmark"> </i>
+							Your Bookings
+						</h3>
+
+						<div class="alert alert-info alert-dismissable">
+							<a class="panel-close close" data-dismiss="alert">×</a> You still
+							have to come back for the follow-up check up by
+							<strong>Dr. Black Jack</strong>.
 						</div>
-						<form class="form-contain">
-							<div class="form-group">
-								<label for="exampleInputEmail1">Email address</label>
-								<input
-									type="email"
-									class="form-control"
-									id="exampleInputEmail1"
-									aria-describedby="emailHelp"
-									placeholder="Enter email"
-								/>
-							</div>
-							<div class="form-group">
-								<label for="exampleInputPassword1">Password</label>
-								<input
-									type="password"
-									class="form-control"
-									id="exampleInputPassword1"
-									placeholder="Password"
-								/>
-							</div>
-							<div class="form-group justify-content-center">
-								<div class="form-check">
-									<input
-										type="checkbox"
-										class="form-check-input"
-										id="exampleCheck1"
-									/>
-									<label class="form-check-label" for="exampleCheck1"
-										>Remember Password</label
-									>
-									<p class="p-1">
-										<a href="loginalternative.html">Forgot Your Password ?</a>
-									</p>
-								</div>
-								<button type="submit" class="btn btn-primary">
-									<i class="fa fa-sign-in"
-										><a href="main.html" style="text-decoration: none;"
-											>Submit</a
-										></i
-									>
-								</button>
-							</div>
-						</form>
+						<table class="table table-hover table-bordered table">
+							<thead class="table-info">
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Name of Doctor</th>
+									<th scope="col">Date</th>
+									<th scope="col">Time of Appointment</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Black Jack</td>
+									<td>June 20, 2019</td>
+									<td>8:00 - 9:00 am</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Jacob Leighs</td>
+									<td>January 1, 2020</td>
+									<td>1:00 - 2:00 pm</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Larry the Bird</td>
+									<td>May 25, 2020</td>
+									<td>6:00 - 7:00 pm</td>
+								</tr>
+								<tr>
+									<th scope="row">4</th>
+									<td>Ju Ne Maruku</td>
+									<td>May 4, 2020</td>
+									<td>3:00 - 5:00 pm</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</div>

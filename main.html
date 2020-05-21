@@ -9,7 +9,8 @@
 		<link rel="manifest" href="images/site.webmanifest">
 		<link rel="stylesheet" href="css/globalstyle.css" />
 		<link rel="stylesheet" href="css/bootstrap.css" />
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
         <link
         rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -38,9 +39,8 @@
         <title>Welcome to meDPulse</title>
     </head>
     <body>
-    <div class="container-fluid">
-            <nav
-				class="navbar navbar-expand-xl navbar-light navbar-toggleable-lg navbar-inverse"
+        <nav
+				class="navbar navbar-expand-xl navbar-light navbar-toggleable-lg navbar-inverse nab fant"
 			    >
 				<a class="navbar-brand" href="index.html"
 					><img src="images/logo-sm.png" alt=""
@@ -59,25 +59,28 @@
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="nav-item">
-							<a class="nav-link fa fa-search-plus" href="index.html"> Search</a>
+							<a class="nav-link " href="index.html"><i class="fa fa-search-plus"></i> Search</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link fa fa-calendar" href="#"> Appoinments</a>
+							<a class="nav-link" href="#"><i class=" fa fa-calendar"></i> Appoinments</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link fa fa-envelope" href="#"> Chat</a>
+							<a class="nav-link" href="#"><i class=" fa fa-envelope"></i> Chat</a>
                         </li>
                         <li class="nav-item">
-							<a class="nav-link fa fa-history" href="#"> History</a>
+							<a class="nav-link " href="#"><i class="fa fa-history"></i> History</a>
+                        </li>
+                        <li class="nav-item">
+							<a class="nav-link " id="hov" href="#"><i class=" fa fa-book"></i> <strong>Book</strong></a>
 						</li>
                     </ul>
                     <ul class="nav navbar-nav justify-content-lg-between ml-auto">
                         <li class="nav-item">
-							<a class="nav-link fa fa-bell" href="#"> Notifications</a>
+							<a class="nav-link " href="#"><i class="fa fa-bell"></i> Notifications</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle fa fa-cog" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Settings
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class=" fa fa-cog"></i>Settings
                             </a>
                             <div class="dropdown-menu dropdown-primary dropdown-menu-right" aria-labelledby="navbarDropdown">
                               <a class="dropdown-item" href="#">My Profile</a>
@@ -91,8 +94,8 @@
                     </ul>
 				</div>
             </nav>
-            <hr>
-            <div class="container-fluid">
+    <div class="container-fluid bods" >
+            <div class="container">
                 <div class="border border-light rounded shadow-sm py-4">
                     <h1 class="text-center">Welcome, <span>Anon !</span></h1>
                     <div class="row">

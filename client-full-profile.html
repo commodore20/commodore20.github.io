@@ -1,0 +1,201 @@
+<!--Created May 21, 2020-->
+<!-- Client's  Profile-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="images/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="images/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="images/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="images/site.webmanifest" />
+		<link rel="stylesheet" href="css/globalstyle.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+		<title>MeDPulse</title>
+	</head>
+	<body>
+		<div class="container">
+			<!--Start of navbar breadcrumb-->
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="">Home</a></li>
+					<li class="breadcrumb-item"><a href="">Search</a></li>
+					<li class="breadcrumb-item" aria-current="page">Profile</li>
+				</ol>
+			</nav>
+			<!--end of Navbar Breadcrumb-->
+			<div class="container">
+				<!--Start of Client's Profile-->
+				<div class="row border rounded shadow-sm py-3">
+					<div class="col-lg-2 pl-4">
+						<img
+							src="images/default-avatar.png"
+							class="rounded-circle"
+							alt=""
+						/>
+					</div>
+					<div class="col-md-8 pt-4">
+						<h3 class="font-weight-bold">Carlo Penduko</h3>
+						<p id="email-text">carlopenduko@example.com</p>
+						<p id="address-text">420 Acacia Village, San Isidro, Digos City</p>
+					</div>
+					<div class="col-lg-2">
+						<button class="btn btn-secondary">
+							<i class="fa fa-edit"></i> Edit Profile
+						</button>
+					</div>
+				</div>
+				<!--end of Client's Profile-->
+				<div class="container pt-4">
+					<!--Start of Information tab pane-->
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<ul class="nav nav-tabs">
+								<li class="nav-item">
+									<a
+										href=""
+										data-target="#info"
+										data-toggle="tab"
+										class="nav-link active"
+										>About</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										href=""
+										data-target="#follow"
+										data-toggle="tab"
+										class="nav-link"
+										>Followed Physicians</a
+									>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane active border rounded" id="info">
+									<div class="card-body">
+										<div class="row py-4 px-4">
+											<div class="col-md-10">
+												<div class="form-group">
+													<h5 class="font-weight-bold">Gender</h5>
+													<p id="about-text">Male</p>
+												</div>
+												<div class="form-group">
+													<h5 class="font-weight-bold">Birthday</h5>
+													<p id="birthday-text">February 29, 1990</p>
+												</div>
+												<div class="form-group">
+													<h5 class="font-weight-bold">Contact Number</h5>
+													<p id="number-text">+639469191919</p>
+												</div>
+												<div class="form-group">
+													<h5 class="font-weight-bold">Miscellaneous</h5>
+													<p id="misc-text">None</p>
+												</div>
+												<div class="form-group">
+													<h5 class="font-weight-bold">Badges</h5>
+													<a href="#" class="badge badge-pill badge-primary"
+														>500 Appointments</a
+													>
+													<a href="#" class="badge badge-pill badge-secondary"
+														>Premium User</a
+													>
+													<a href="#" class="badge badge-pill badge-success"
+														>Beta User</a
+													>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane border rounded" id="follow">
+									<div class="container borded rounded shadow-sm">
+										<div class="row">
+											<div class="col-lg-2 py-4">
+												<img
+													src="images/customer-mockup.jpg"
+													class="border rounded-circle"
+													alt=""
+												/>
+											</div>
+											<div class="col-md-5 py-4 align-items-center">
+												<h4 class="font-weight-bold">Harold Hidenciana</h4>
+												<h5 id="specialty-text">Physician</h5>
+												<h6 id="room-text">San Jose Clinic</h6>
+												<a href="">More Info</a>
+											</div>
+											<div class="col-md-5 py-5">
+												<!-- May 21, 2020. Button doesn't seem to have a margin when in responsive site. Gonna fix ASAP-->
+												<div class="form-group">
+													<button
+														type="submit"
+														class="btn btn-secondary"
+														id="btn-appoint"
+													>
+														<i class="fa fa-heart"></i> Unfollow
+													</button>
+
+													<button
+														type="submit"
+														class="btn btn-primary"
+														id="btn-chat"
+													>
+														<i class="fa fa-envelope"></i> Chat Doctor
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--End of INformation Tab Pane-->
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

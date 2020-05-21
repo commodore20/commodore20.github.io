@@ -1,11 +1,28 @@
-<html>
+<!DOCTYPE html>
+<!-- Created May 20, 2020-->
+<!-- Client Pre-Registration-->
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-		<link rel="manifest" href="images/site.webmanifest">
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="images/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="images/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="images/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="images/site.webmanifest" />
 		<link rel="stylesheet" href="css/globalstyle.css" />
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -34,126 +51,64 @@
 			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 			crossorigin="anonymous"
 		></script>
-	</head>
 
+		<title>Login</title>
+	</head>
 	<body>
-		<div class="container-fluid bods py-5 ">
-					<div
+        <div class="container-fluid bods py-5 ">
+			<div
 					class="container-fluid "
-				>
+			>
 					<div class="container border border-light rounded shadow">
 						<div class="content-header">
 							<div class="title-primary text-center pt-2">
+                                <img src="images/logo-sm.png" alt="">
 								<h3>
-									<i class="fa fa-user text-black-50" aria-hidden="true"
-										>Pre-Register Now to access the meDPulse!</i
-									>
+                                    
+                                    Pre-Registration
 								</h3>
 							</div>
 							<hr />
 						</div>
-						<div
-							class="validation-summary-valid text-danger"
-							data-valmsg-summary="true"
-						>
-							<ul>
-								<li style="display: none;"></li>
-							</ul>
-						</div>
 	
-						<form action="/Home/SignUp" method="post" novalidate="novalidate">
-							<input
-								name="__RequestVerificationToken"
-								type="hidden"
-								value="_P3ZS1Yn9KKCCjyUZsjhV79StR6ivsNL9MkYrxSVyNgdUlFBicRzpcngccT87TxFNuVizqSLs3py6FoUh4EYTg86W74GCKC-G5YGcqmvm9o1"
-							/>
+						<form action="" method="post" novalidate="novalidate">
+
 							<div class="row">
 								<div class="col-md-4 col-sm-3"></div>
 								<div class="col-md-4 col-sm-3">
 									<div class="form-group row">
-										<label for="FirstName">First Name</label>
+										<label for="fname">First Name</label>
 										<input
 											class="form-control text-box single-line"
 											data-val="true"
 											data-val-length="The field First Name must be a string with a maximum length of 40."
 											data-val-length-max="40"
 											data-val-required="The First Name field is required."
-											id="FirstName"
-											name="FirstName"
+											id="fname"
+											name="fname"
 											type="text"
 											value=""
 										/>
-										<span
-											class="field-validation-valid"
-											data-valmsg-for="FirstName"
-											data-valmsg-replace="true"
-										></span>
+										
 									</div>
 									<div class="form-group row">
-										<label for="MiddleName">Middle Name</label>
+										<label for="lname">Last Name</label>
 	
 										<input
-											class="form-control text-box single-line"
-											data-val="true"
-											data-val-length="The field Middle Name must be a string with a maximum length of 25."
-											data-val-length-max="25"
-											data-val-required="The Middle Name field is required."
-											id="MiddleName"
-											name="MiddleName"
-											placeholder="put 'N/A' if not applicable"
-											type="text"
-											value=""
-										/>
-										<span
-											class="field-validation-valid"
-											data-valmsg-for="MiddleName"
-											data-valmsg-replace="true"
-										></span>
-									</div>
-									<div class="form-group row">
-										<label for="LastName">Last Name</label>
-	
-										<input
-											autofocus=""
 											class="form-control text-box single-line"
 											data-val="true"
 											data-val-length="The field Last Name must be a string with a maximum length of 25."
 											data-val-length-max="25"
 											data-val-required="The Last Name field is required."
-											id="LastName"
-											name="LastName"
+											id="lname"
+											name="lname"
 											type="text"
 											value=""
 										/>
-										<span
-											class="field-validation-valid"
-											data-valmsg-for="LastName"
-											data-valmsg-replace="true"
-										></span>
 									</div>
-	
-									<div class="form-group row">
-										<label for="email">Email</label>
-	
-										<input
-											class="form-control text-box single-line"
-											data-val="true"
-											id="email"
-											name="email"
-											placeholder="edit@gmail.com"
-											type="text"
-											value=""
-										/>
-										<span
-											class="field-validation-valid"
-											data-valmsg-for="email"
-											data-valmsg-replace="true"
-										></span>
-									</div>
-									<div class="form-group row">
-										<label for="MobileNo">Mobile Number</label>
-										<div class="input-group mimic-input">
-											<span class="input-group-addon">+63</span>
+                                    <div class="form-group row">
+										<label for="contact">Contact Number</label>
+										
 											<input
 												class="form-control text-box single-line"
 												data-val="true"
@@ -163,23 +118,38 @@
 												data-val-regex="The field Mobile No. must be a number with exactly 10 digits."
 												data-val-regex-pattern="^[0-9]{10}$"
 												data-val-required="The Mobile No. field is required."
-												id="MobileNo"
-												name="MobileNo"
+												id="contact"
+												name="contact"
 												type="text"
 												value=""
-												placeholder="94646901231"
+												placeholder=" ex. 094646901231"
 											/>
-										</div>
-										<span
-											class="field-validation-valid"
-											data-valmsg-for="MobileNo"
-											data-valmsg-replace="true"
-										></span>
 									</div>
+									<div class="form-group row">
+										<label for="email">Email</label>
+										<input
+											class="form-control text-box single-line"
+											data-val="true"
+											id="email"
+											name="email"
+											placeholder="edit@gmail.com"
+											type="email"
+											value=""
+										/>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="pin-digit">6-Pin Digit</label>
+                                        <div class="input-group">
+                                            <input type="password" pattern="[0-9]*" inputmode="numeric" id="pin-digit" name="pin-digit" class="form-control" maxlength="6">
+                                        <span class="input-group-addon">
+                                            <span class="fa fa-eye"></span>
+                                        </span>
+                                        </div>
+                                        
+                                    </div>
+									
 								</div>
 							</div>
-							<input type="hidden" name="LoginPassword" value="Temp1234" />
-							<input type="hidden" name="SecAnswer" value="Temp1234" />
 							<div class="form-check text-center pb-2">
 								<input
 									type="checkbox"
@@ -298,11 +268,8 @@
 							</div>
 						</form>
 					</div>
-			<footer class="fixed-bottom">
-				<div id="Footer">
-					©2020 DPHealth Inc. All Rights Reserved.
-				</div>
-			</footer>
 		</div>
-	</body>
+
+
+    </body>
 </html>
