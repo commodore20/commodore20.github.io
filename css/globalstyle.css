@@ -390,13 +390,11 @@ select.form-control-lg:not([size]):not([multiple]) {
 }
 
 .nab {
-	background: rgb(122, 199, 232);
+	background: rgb(70, 74, 76);
 	background: linear-gradient(
-		90deg,
-		rgba(122, 199, 232, 1) 0%,
-		rgba(213, 237, 247, 1) 8%,
-		rgba(213, 237, 247, 1) 92%,
-		rgba(122, 199, 232, 1) 100%
+		180deg,
+		rgba(70, 74, 76, 1) 0%,
+		rgba(70, 74, 76, 1) 100%
 	);
 }
 
@@ -451,4 +449,16 @@ ul li a#hov:hover {
 
 .sidebar-bg {
 	background-color: rgb(117, 164, 235);
+}
+
+.icon-color-white {
+	color: white;
+}
+
+.back-to-top {
+	cursor: pointer;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: none;
 }

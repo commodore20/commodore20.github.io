@@ -1,58 +1,6 @@
-<html>
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="apple-touch-icon"
-			sizes="180x180"
-			href="images/apple-touch-icon.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="images/favicon-32x32.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="16x16"
-			href="images/favicon-16x16.png"
-		/>
-		<link rel="manifest" href="images/site.webmanifest" />
-		<link rel="stylesheet" href="css/globalstyle.css" />
-		<link rel="stylesheet" href="css/bootstrap.css" />
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-		/>
-		<link
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-			crossorigin="anonymous"
-		/>
-		<script
-			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-			crossorigin="anonymous"
-		></script>
-		<title>MeDPulse| Book an Appointment Now!</title>
-	</head>
-
-	<body>
-		<div class="py-50 px-md-4 mb-3 container-fluid" id="wrapper">
+       <!--  index.html for reference-->
+       <!-- Created May 23, 2020-->
+       <div class="py-50 px-md-4 mb-3 container-fluid" id="wrapper">
 			<div class="container-fluid">
 				<div
 					class="d-flex flex-column flex-xl-row align-items-center p-3 px-md-4 mb-3 bgh"
@@ -80,89 +28,28 @@
 								Use the Quick Search to find the doctor you are looking for.
 							</h3>
 						</div>
-					</div>
-
-					<form
-						action=""
-						autocomplete="off"
-						id="FrmSearch"
-						method="post"
-						novalidate="novalidate"
-					>
+                    </div>
+                    {!! Form::open(['url' => 'foo/bar', 'class' => 'form-contain']) !!}
+					
 						<input name="__RequestVerificationToken" type="hidden" value="" />
 						<div class="pl-5 row pt-md-3">
 							<div class="col-md-3 col-xl-3 form-group">
 								<div class="">
-									<input
-										data-val="true"
-										data-val-number="The field Specialty must be a number."
-										data-val-required="The Specialty field is required."
-										id="SpecialtyId"
-										name="SpecialtyId"
-										type="hidden"
-										value=""
-									/>
-									<input
-										type="text"
-										id="SpecialtyName"
-										name="SpecialtyName"
-										value=""
-										required=""
-										placeholder="Specialty"
-										autofocus=""
-										class="form-control text-box single-line"
-										data-val="true"
-										data-val-length="The field Specialty must be a string with a maximum length of 60."
-										data-val-length-max="60"
-										data-val-required="The Specialty field is required."
-									/>
-
-									<span
-										class="field-validation-valid"
-										data-valmsg-for="SpecialtyId"
-										data-valmsg-replace="true"
-									></span>
-									<span
-										id="ErrMsgSpecialty"
-										class="field-validation-valid"
-										data-valmsg-for="SpecialtyName"
-										data-valmsg-replace="true"
-									></span>
+                                {{ Form::text('specialty', $value = null, ['class' => 'form-control text-box single-line', 'placeholder' => 'Specialty']) }}
 								</div>
 							</div>
 							<div class="col-md-3 col-xl-3 form-group">
-								<select
-									class="form-control"
-									data-val="true"
-									data-val-number="The field Location must be a number."
-									data-val-required="The Location field is required."
-									id="LocationId"
-									name="LocationId"
-								>
-									<option value="">Select Location</option>
-								</select>
-								<span
-									class="field-validation-valid"
-									data-valmsg-for="LocationId"
-									data-valmsg-replace="true"
-								></span>
+                            {{ Form::select('location', array('select' => 'Select Location', 'digos' => 'Digos'),'digos', ['class' => 'form-control text-box single-line', 'placeholder' => 'Specialty']) }}
 							</div>
 							<div class="col-md-3 col-xl-3 form-group">
-								<input
-									type="text"
-									id="doctors"
-									name="doctors"
-									placeholder="Physician"
-									class="form-control"
-								/>
+                            {{ Form::text('doctors', $value = null, ['class' => 'form-control text-box single-line', 'placeholder' => 'Physician']) }}
 							</div>
 							<div class="col-md-3 col- form-group text-center text-md-left">
-								<button type="submit" id="BtnSearch" class="btn btn-primary">
-									<i class="fa fa-search"></i>&nbsp; Search
-								</button>
+                            {{ Form::button('Search'['class' => 'btn btn-primary', 'type' => 'submit'] ) }}
 							</div>
 						</div>
-					</form>
+                   
+                    {!! Form::close()!! }
 				</div>
 			</div>
 			<hr />
@@ -375,5 +262,3 @@
 				$("#back-to-top").tooltip("hide");
 			});
 		</script>
-	</body>
-</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="images/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="images/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="images/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="images/site.webmanifest" />
+		<link rel="stylesheet" href="css/simple-sidebar.css" />
+		<link rel="stylesheet" href="css/globalstyle.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+		<title>MeDPulse Super Admin</title>
+	</head>
+	<body id="dashboard-body">
+		<div class="container">
+			<div class="row justify-content-around py-4">
+				<div class="col-md-5 border rounded shadow-sm">
+					<div class="form-group">
+						<label for="address">Full Address:</label>
+						<input
+							type="text"
+							id="address"
+							name="address"
+							class="form-control text-box single-line"
+							placeholder="Street, City/Municipality, Province"
+						/>
+					</div>
+					<div class="form-group">
+						<label for="zip-code">Zip Code:</label>
+						<input
+							type="text"
+							id="zip-code"
+							name="zip-code"
+							class="form-control text-box single-line"
+							pattern="\d*"
+							placeholder=""
+							maxlength="4"
+						/>
+					</div>
+					<!--Modal Anchor-->
+					<a href="" data-toggle="modal" data-target="#exampleModalCenter"
+						>Zip Code Guide</a
+					>
+
+					<!-- Modal -->
+					<div
+						class="modal fade"
+						id="exampleModalCenter"
+						tabindex="-1"
+						role="dialog"
+						aria-labelledby="exampleModalCenterTitle"
+						aria-hidden="true"
+					>
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">
+										DavSur Zip Code Guide
+									</h5>
+									<button
+										type="button"
+										class="close"
+										data-dismiss="modal"
+										aria-label="Close"
+									>
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<img src="images/zip-code.jpg" alt="" />
+								</div>
+								<div class="modal-footer">
+									<button
+										type="button"
+										class="btn btn-secondary"
+										data-dismiss="modal"
+									>
+										Close
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="text-center">
+						<p>
+							<button type="submit" class="btn btn-primary" id="BtnSubmit">
+								Submit
+							</button>
+							<button type="submit" class="btn btn-primary" id="BtnCancel">
+								Cancel
+							</button>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-5 border rounded shadow-sm">
+					<div class="form-group pt-5">
+						<label for="specialty">Specialty:</label>
+						<input
+							type="text"
+							id="specialty"
+							name="specialty"
+							class="form-control text-box single-line"
+							placeholder="Specialty"
+						/>
+					</div>
+					<div class="text-center">
+						<p>
+							<button type="submit" class="btn btn-primary" id="BtnSubmit">
+								Submit
+							</button>
+							<button type="submit" class="btn btn-primary" id="BtnCancel">
+								Cancel
+							</button>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

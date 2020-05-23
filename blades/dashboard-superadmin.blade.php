@@ -1,0 +1,416 @@
+        <div class="d-flex fant" id="wrapper">
+			<!-- Sidebar -->
+			<div class="bg-light border-right" id="sidebar-wrapper">
+				<div class="sidebar-heading">
+					<img
+						src="images/logo-whole.png"
+						style="width: 150px; height: 65px;"
+						alt=""
+					/>
+				</div>
+				<div class="list-group list-group-flush">
+					<a href="#" class="list-group-item list-group-item-action bg-light"
+						>Dashboard</a
+					>
+					<a href="#" class="list-group-item list-group-item-action bg-light"
+						>Doctors</a
+					>
+					<a href="#" class="list-group-item list-group-item-action bg-light"
+						>Patients</a
+					>
+					<a href="#" class="list-group-item list-group-item-action bg-light"
+						>Logs</a
+					>
+					<a
+						href="city-specialty-register.html"
+						class="list-group-item list-group-item-action bg-light"
+						>Others</a
+					>
+					<a href="#" class="list-group-item list-group-item-action bg-light"
+						>About</a
+					>
+				</div>
+			</div>
+			<!-- /#sidebar-wrapper -->
+
+			<!-- Page Content -->
+			<div id="page-content-wrapper">
+				<!-- Primary Navbar v2 -->
+				<nav
+					class="nav navbar navbar-expand navbar-light navbar-inverse nab fant"
+				>
+					<button class="btn" id="menu-toggle">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="col-lg-5">
+						<div class="input-group">
+							<input
+								type="hidden"
+								name="search_param"
+								value="all"
+								id="search_param"
+							/>
+							<input
+								type="text"
+								class="form-control rounded-pill"
+								name="x"
+								placeholder="Search for .."
+							/>
+						</div>
+					</div>
+					<!--
+						<ul class="nav">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html"
+									><i class="fa fa-search-plus"></i> Search</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"
+									><i class="fa fa-calendar"></i> Appoinments</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"
+									><i class="fa fa-envelope"></i> Chat</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"
+									><i class="fa fa-history"></i> History</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"
+									><i class="fa fa-book"></i> <strong>Book</strong></a
+								>
+							</li>
+						</ul>
+						-->
+					<ul class="nav navbar-nav ml-lg-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#"
+								><i class="fa fa-envelope-o icon-color-white"></i>
+								<i class="quantity"></i
+							></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"
+								><i class="fa fa-bell icon-color-white"></i
+							></a>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								<i class="fa fa-cog icon-color-white"></i>
+							</a>
+							<div
+								class="dropdown-menu dropdown-primary dropdown-menu-right"
+								aria-labelledby="navbarDropdown"
+							>
+								<a class="dropdown-item" href="#">My Profile</a>
+								<a class="dropdown-item" href="#">Preferences</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Logout</a>
+							</div>
+						</li>
+					</ul>
+				</nav>
+				<div class="alert alert-success alert-dismissible" role="alert">
+					<a data-dismiss="alert" class="close">x</a>
+					<strong>JM Dela Cruz Man</strong> added to the database
+				</div>
+				<div class="alert alert-warning alert-dismissible" role="alert">
+					<a data-dismiss="alert" class="close">x</a>
+					Database Full
+				</div>
+				<div class="container py-2 border rounded shadow-sm">
+					<div class="title-primary">
+						<h3 class="text-center">
+							<i class="fa fa-user-circle"> </i>
+							Doctors List
+						</h3>
+					</div>
+					<div class="table-responsive-md col-md-12">
+						<table class="table table-hover table-bordered table">
+							<thead class="table-info">
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">First Name</th>
+									<th scope="col">Middle Name</th>
+									<th scope="col">Last Name</th>
+									<th scope="col">Specialty</th>
+									<th scope="col">Actions</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>John</td>
+									<td>Otto</td>
+									<td>Sotto</td>
+									<td>Pediatrician</td>
+									<td>
+										<button>
+											<i class="fa fa-pencil" aria-hidden="true"></i>
+										</button>
+										<button><i class="fa fa-close"></i></button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Mark</td>
+									<td>Pineda</td>
+									<td>Fideral</td>
+									<td>Dentist</td>
+									<td>
+										<button>
+											<i class="fa fa-pencil" aria-hidden="true"></i>
+										</button>
+										<button><i class="fa fa-close"></i></button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Maria Jessa</td>
+									<td>Labuyan</td>
+									<td>Conception</td>
+									<td>Psychiatrist</td>
+									<td>
+										<button>
+											<i class="fa fa-pencil" aria-hidden="true"></i>
+										</button>
+										<button><i class="fa fa-close"></i></button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">4</th>
+									<td>Xiao</td>
+									<td>Tang</td>
+									<td>San</td>
+									<td>General Medicine</td>
+									<td>
+										<button>
+											<i class="fa fa-pencil" aria-hidden="true"></i>
+										</button>
+										<button><i class="fa fa-close"></i></button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="title-primary pt-3">
+						<h3 class="text-center">
+							<i class="fa fa-user-circle-o"> </i>
+							Patients List
+						</h3>
+					</div>
+					<div class="table-responsive-md col-md-12">
+						<table class="table table-hover table-bordered table">
+							<thead class="table-info">
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">First Name</th>
+									<th scope="col">Middle Name</th>
+									<th scope="col">Last Name</th>
+									<th scope="col">Email</th>
+									<th scope="col">Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>John</td>
+									<td>Cardo</td>
+									<td>Dalisay</td>
+									<td>cardodalisay@example.com</td>
+									<td>
+										<button>
+											<i class="fa fa-pencil" aria-hidden="true"></i>
+										</button>
+										<button><i class="fa fa-close"></i></button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>June</td>
+									<td>Marc</td>
+									<td>Alverson</td>
+									<td>memerdusim20@example.com</td>
+									<td>
+										<button>
+											<i class="fa fa-pencil" aria-hidden="true"></i>
+										</button>
+										<button><i class="fa fa-close"></i></button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Lovely</td>
+									<td>Mae</td>
+									<td>Sedentario</td>
+									<td>sedentario123@example.com</td>
+									<td>
+										<button>
+											<i class="fa fa-pencil" aria-hidden="true"></i>
+										</button>
+										<button><i class="fa fa-close"></i></button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">4</th>
+									<td>Krizzia</td>
+									<td>Anna</td>
+									<td>Tan</td>
+									<td>tan.g.anna@example.com</td>
+									<td>
+										<button>
+											<i class="fa fa-pencil" aria-hidden="true"></i>
+										</button>
+										<button><i class="fa fa-close"></i></button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="table-responsive-md col-md-12">
+						<div class="title-primary">
+							<h3 class="text-center">
+								<i class="fa fa-paperclip"> </i>
+								Logs
+							</h3>
+						</div>
+						<table class="table table-hover table-bordered table">
+							<thead class="table-info">
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Description</th>
+									<th scope="col">Patient</th>
+									<th scope="col">With Patient</th>
+									<th scope="col">Booking</th>
+									<th scope="col">Physician</th>
+									<th scope="col">Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Hard to breathe during evening</td>
+									<td>Kim John Ruiz</td>
+									<td>No</td>
+									<td>Monday: 8:00 - 9:00 am</td>
+									<td>John Dela Cruz</td>
+									<td>
+										<button>
+											<i class="fa fa-pencil" aria-hidden="true"></i>
+										</button>
+										<button><i class="fa fa-close"></i></button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>5 months regular check up</td>
+									<td>Anna Susanna Dela Pena</td>
+									<td>No</td>
+									<td>Friday: 10:00 - 11:00 am</td>
+									<td>Mylene Lorete</td>
+									<td>
+										<button>
+											<i class="fa fa-pencil" aria-hidden="true"></i>
+										</button>
+										<button><i class="fa fa-close"></i></button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Grandfather hard to walk</td>
+									<td>Antonio Luna IX</td>
+									<td>Yes</td>
+									<td>Wednesday: 1:00 - 2:00 pm</td>
+									<td>Kiko Polares</td>
+									<td>
+										<button>
+											<i class="fa fa-pencil" aria-hidden="true"></i>
+										</button>
+										<button><i class="fa fa-close"></i></button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">4</th>
+									<td>Regular check up of my Grandfather</td>
+									<td>Christian Raul Yolanda</td>
+									<td>Yes</td>
+									<td>Saturday: 8:00 - 9:00 am</td>
+									<td>Harold Hidevalu</td>
+									<td>
+										<button>
+											<i class="fa fa-pencil" aria-hidden="true"></i>
+										</button>
+										<button><i class="fa fa-close"></i></button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- /#page-content-wrapper -->
+		</div>
+		<!-- /#wrapper -->
+		<div
+			id="btnTop"
+			class="fixed-action-btn smooth-scroll"
+			style="bottom: 45px; right: 24px; display: none;"
+		>
+			<a href="#topSection" class="btn-floating btn-large red">
+				<i class="fa fa-arrow-up"></i>
+			</a>
+	    </div>
+		<a
+			id="back-to-top"
+			href="#"
+			class="btn btn-primary btn-lg back-to-top"
+			role="button"
+			title="Return to top"
+			data-toggle="tooltip"
+			data-placement="left"
+			><span class="fa fa-arrow-up"></span
+		></a>
+
+		<script>
+			$("#menu-toggle").click(function (e) {
+				e.preventDefault();
+				$("#wrapper").toggleClass("toggled");
+			});
+
+			$(document).ready(function () {
+				$(window).scroll(function () {
+					if ($(this).scrollTop() > 50) {
+						$("#back-to-top").fadeIn();
+					} else {
+						$("#back-to-top").fadeOut();
+					}
+				});
+				// scroll body to 0px on click
+				$("#back-to-top").click(function () {
+					$("#back-to-top").tooltip("hide");
+					$("body,html").animate(
+						{
+							scrollTop: 0,
+						},
+						800
+					);
+					return false;
+				});
+
+				$("#back-to-top").tooltip("show");
+			});
+		</script>
