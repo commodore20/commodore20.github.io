@@ -9,14 +9,14 @@
 							<div class="title-primary text-center pt-2">
                                 <img src="images/logo-sm.png" alt="">
 								<h3>
-                                    
                                     Pre-Registration
 								</h3>
 							</div>
 							<hr />
 						</div>
+{!! Form::open(['url' => 'foo/bar', 'class' => 'form-contain']) !!}
 							<div class="row">
-                            {!! Form::open(['url' => 'foo/bar', 'class' => 'form-contain']) !!}
+                            
 								<div class="col-md-4 col-sm-3"></div>
 								<div class="col-md-4 col-sm-3">
 									<div class="form-group row">
@@ -49,8 +49,8 @@
 								</div>
 							</div>
 							<div class="form-check text-center pb-2">
-                    {{ Form::checkbox('terms-and-services',['class'=> 'form-check-input']) }} <!-- checkbox -->
-					{{ Form::label('terms-and-services','I have read and agree on the.') }}
+                  				  {{ Form::checkbox('terms-and-services',['class'=> 'form-check-input']) }} <!-- checkbox -->
+								  {{ Form::label('terms-and-services','I have read and agree on the.') }}
 								<a href="#" data-toggle="modal" data-target="#modalTerms"
 									>Terms and Services </a
 								> <p>of the meDPulse website</p>
@@ -149,7 +149,7 @@
 					<div class="text-center">
 						{{ Form::button('Submit'['class' => 'btn btn-primary', 'type' => 'submit'] ) }}
 						{{ Form::button('Cancel'['class' => 'btn btn-primary', 'type' => 'submit'] ) }}
-					</div>
-            {!! Form::close()!! }
-		</div>
-	</div>
+					</div>  
+				</div>	
+			</div>
+{!! Form::close()!! }

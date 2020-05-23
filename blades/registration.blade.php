@@ -18,7 +18,7 @@
 						<div class="row">
 							<div class="col-md-4 col-sm-3"></div>
 							<div class="col-md-4 col-sm-3">
-					{!! Form::open(['url' => 'foo/bar']) !!}
+{!! Form::open(['url' => 'foo/bar']) !!}
 								<div class="form-group row">
 							
 									{{ Form::label('firstName', 'First Name:') }} <!-- label of first name -->
@@ -132,7 +132,7 @@
 						{{ Form::submit('Submit', ['class' => 'btn btn-primary'] ) }}
 						{{ Form::submit('Cancel', ['class' => 'btn btn-primary'] ) }}
 						</div>
-					{!! Form::close()!! }
 				</div>
 			</div>
+{!! Form::close()!! }
 			

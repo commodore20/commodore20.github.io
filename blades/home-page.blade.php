@@ -29,7 +29,7 @@
 							</h3>
 						</div>
                     </div>
-                    {!! Form::open(['url' => 'foo/bar', 'class' => 'form-contain']) !!}
+    {!! Form::open(['url' => 'foo/bar', 'class' => 'form-contain']) !!}
 					
 						<input name="__RequestVerificationToken" type="hidden" value="" />
 						<div class="pl-5 row pt-md-3">
@@ -48,8 +48,8 @@
                             {{ Form::button('Search'['class' => 'btn btn-primary', 'type' => 'submit'] ) }}
 							</div>
 						</div>
-                   
-                    {!! Form::close()!! }
+				   
+	{!! Form::close()!! }
 				</div>
 			</div>
 			<hr />

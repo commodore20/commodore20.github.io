@@ -1,6 +1,6 @@
         <div class="container">
 			<div class="row justify-content-around py-4">
-            {!! Form::open(['url' => 'foo/bar', 'class' => 'form-contain']) !!}
+{!! Form::open(['url' => 'foo/bar', 'class' => 'form-contain']) !!}
 				<div class="col-md-5 border rounded shadow-sm">
 					<div class="form-group">
                     {{ Form::label('address', 'Full Address:') }} 
@@ -55,6 +55,6 @@
 					{{ Form::button('Cancel'['class' => 'btn btn-primary', 'type' => 'submit'] ) }}
 					</div>
                 </div>
-            {!! Form::close()!! }
 			</div>
 		</div>
+{!! Form::close()!! }

@@ -1,6 +1,6 @@
 <!-- Created May 20, 2020-->
 <!-- Signing In Via Mobile Number-->
-<div class="container-fluid bods py-5">
+		<div class="container-fluid bods py-5">
 			<div class="container"></div>
 			<div class="row">
 				<div class="col-md-4 col-sm-3"></div>
@@ -13,7 +13,7 @@
 							<h3>Login</h3>
 							<br />
 						</div>
-						{!! Form::open(['url' => 'foo/bar', 'class' => 'form-contain']) !!}
+{!! Form::open(['url' => 'foo/bar', 'class' => 'form-contain']) !!}
 							<div class="form-group">
                             {{ Form::label('contact', 'Contact Number:') }} 
 		                    {{ Form::text('contact', $value = null, ['class' => 'form-control text-box single-line', 'maxlength' => '11', 'placeholder' => 'First Name']) }}
@@ -41,8 +41,9 @@
                                 {{ Form::button('Sign in'['class' => 'btn btn-primary', 'type' => 'submit'] ) }}
 								</div>
 							</div>
-						</form>
+						
 					</div>
 				</div>
 			</div>
 		</div>
+{!! Form::close()!! }

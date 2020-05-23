@@ -9,7 +9,7 @@
 					</h3>
 				</div>
 			    <div class="row justify-content-around">
-                {!! Form::open(['url' => 'foo/bar', 'class' => 'form-contain']) !!}
+{!! Form::open(['url' => 'foo/bar', 'class' => 'form-contain']) !!}
 					<div class="col-md-5">
 						<div class="form-group row">
                         {{ Form::label('fname', 'First Name:') }} 
@@ -175,6 +175,6 @@
 						{{ Form::button('Submit'['class' => 'btn btn-primary', 'type' => 'submit'] ) }}
 						{{ Form::button('Cancel'['class' => 'btn btn-primary', 'type' => 'submit'] ) }}
 					</div>
-            {!! Form::close()!! }
 			</div>
 		</div>
+{!! Form::close()!! }

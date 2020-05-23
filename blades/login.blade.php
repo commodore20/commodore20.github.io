@@ -12,7 +12,7 @@
 							
 							
 						</div>
-							{!! Form::open(['url' => 'foo/bar', 'class' => form-contain]) !!}
+{!! Form::open(['url' => 'foo/bar', 'class' => form-contain]) !!}
 						
 							<div class="form-group">
 							{{ Form::label('mobileNo', 'Mobile Number:') }}
@@ -32,12 +32,9 @@
 							</div>
 							<div class="text-center">
 							{{ Form::submit('Login', ['class' => 'btn btn-primary'] ) }}
-							</div>
-							
-						
-							{!! Form::close()!! }
-					</div>
-                </div>
-                
+							</div>	
+						</div>
+               	 	</div>
+				</div>
 			</div>
-		</div>
+{!! Form::close()!! }
