@@ -1,84 +1,143 @@
+<!-- Updated May 25,2020 -->
+<!-- Laravel Syntax removed, changed to HTML form syntaxx -->
 
-
-        <div class="container-fluid py-4 bods">
+		<div class="container-fluid py-4 bods">
 			<div class="container border rounded shadow-sm">
-                <div class="title-primary pb-3">
+				<!-- start of First Column Form -->
+				<div class="title-primary pb-3">
 					<h3 class="text-center">
-                        <i class="fa fa-user-circle"> </i>
-						Registration for Doctors
+						<i class="fa fa-user-circle"> </i>
+						Doctor's Registration Form
 					</h3>
 				</div>
-			    <div class="row justify-content-around">
-{!! Form::open(['url' => 'foo/bar', 'class' => 'form-contain']) !!}
-					<div class="col-md-5">
-						<div class="form-group row">
-                        {{ Form::label('fname', 'First Name:') }} 
-						{{ Form::text('fname', $value = null, ['class' => 'form-control text-box single-line', 'placeholder' => 'First Name']) }}
-						</div>
-						<div class="form-group row">
-                        {{ Form::label('midname', 'Middle Name:') }}
-						{{ Form::text('midname', $value = null, ['class' => 'form-control text-box single-line', 'placeholder' => 'Middle Name']) }}
-						</div>
-						<div class="form-group row">
-                        {{ Form::label('lName', 'Last Name:') }} 
-						{{ Form::text('lName', $value = null, ['class' => 'form-control text-box single-line', 'placeholder' => 'Last Name']) }}
-						</div>
-						<div class="form-group row">
-                        {{ Form::label('mail', 'Email:') }}
-						{{ Form::email('mail', $value = null, ['class' => 'form-control  text-box single-line', 'placeholder' => 'email@examplemail.com']) }}
-						</div>
-						<div class="form-group row">
-                        {{ Form::label('number', 'Mobile Number:') }}
-						{{ Form::text('number', $value = null, ['class' => 'form-control text-box single-line', 'placeholder' => 'ex.09501111111']) }}
-						</div>
-					</div>
-					<div class="col-md-5">
-						<div class="form-group row">
-                        {{ Form::label('clinic', 'Clinic/Hospital:') }}
-						{{ Form::text('clinic', $value = null, ['class' => 'form-control text-box single-line', 'placeholder' => 'MeDPulse Clinic']) }}
-						</div>
-						<div class="form-group row">
-                        {{ Form::label('specialty', 'Specialty:') }}
-						{{ Form::text('specialty', $value = null, ['class' => 'form-control text-box single-line', 'placeholder' => 'Specialty']) }}
-						</div>
-		    			<div class="form-group row">
-                        {{ Form::label('schedule', 'Schedule:') }}
-							<div class="input-group date" id="datetimepicker1">
-                            {{ Form::text('schedule', $value = null, ['class' => 'form-control text-box single-line', 'placeholder' => '']) }}
-								<span class="input-group-addon">
-									<span class="fa fa-calendar"></span>
-								</span>
+				<form action="">
+					<div class="row justify-content-around">
+						<div class="col-md-5">
+							<div class="form-group row">
+								<label for="fname">First Name:</label>
+								<input
+									type="text"
+									id="fname"
+									name="fname"
+									class="form-control text-box single-line"
+									placeholder="First Name"
+								/>
+							</div>
+							<div class="form-group row">
+								<label for="midname">Middle Name:</label>
+								<input
+									type="text"
+									id="midname"
+									name="midname"
+									class="form-control text-box single-line"
+									placeholder="Middle Name"
+								/>
+							</div>
+							<div class="form-group row">
+								<label for="lname">Family Name:</label>
+								<input
+									type="text"
+									id="lname"
+									name="lname"
+									class="form-control text-box single-line"
+									placeholder="Family Name"
+								/>
+							</div>
+							<div class="form-group row">
+								<label for="mail">Email:</label>
+								<input
+									type="email"
+									id="mail"
+									name="mail"
+									class="form-control text-box single-line"
+									placeholder="Email Address"
+								/>
+							</div>
+							<div class="form-group row">
+								<label for="number">Mobile Number:</label>
+								<input
+									type="text"
+									id="number"
+									name="number"
+									class="form-control text-box single-line"
+									placeholder="ex. 0946999****"
+								/>
 							</div>
 						</div>
-						<div class="form-group row">
-                        {{ Form::label('rate', 'Rate:') }}
-						{{ Form::text('rate', $value = null, ['class' => 'form-control text-box single-line', 'placeholder' => 'Rate']) }}
-							<label for="rate">Rate:</label>
-							<input
-								type="text"
-								id="rate"
-								name="Rate"
-								class="form-control text-box single-line"
-								placeholder="Rate"
-							/>
+						<div class="col-md-5">
+							<div class="form-group row">
+								<label for="clinic">Clinic/Hospital:</label>
+								<input
+									type="text"
+									id="clinic"
+									name="clinic"
+									class="form-control text-box single-line"
+									placeholder="Clinic/Hospital"
+								/>
+							</div>
+							<div class="form-group row">
+								<label for="specialty">Specialty:</label>
+								<input
+									type="text"
+									id="specialty"
+									name="specialty"
+									class="form-control text-box single-line"
+									placeholder="Specialty"
+								/>
+							</div>
+							<div class="form-group row">
+								<label for="schedule">Schedule:</label>
+								<div class="input-group date" id="datetimepicker1">
+									<input
+										type="text"
+										class="form-control"
+										id="schedule"
+										name="schedule"
+									/>
+									<span class="input-group-addon">
+										<span class="fa fa-calendar"></span>
+									</span>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="rate">Rate:</label>
+								<input
+									type="text"
+									id="rate"
+									name="Rate"
+									class="form-control text-box single-line"
+									placeholder="Rate"
+								/>
+							</div>
+							<div class="form-group row">
+								<label for="experience">Experience:</label>
+								<textarea
+									class="form-control"
+									id="experience"
+									rows="3"
+									maxlength="255"
+								></textarea>
+							</div>
 						</div>
-						<div class="form-group row">
-                        {{ Form::label('experience', 'Experiences:') }}
-						{{ Form::textarea('experience', $value = null, ['class' => 'form-control', 'maxlength' => '255', 'id' => 'experience', 'rows' => '3' 'placeholder' => 'Your Experiences here']) }}
-						</div>
-                    </div>
-                    <script type="text/javascript">
+						<script type="text/javascript">
 							$(function () {
 								$("#datetimepicker1").datetimepicker();
 							});
 						</script>
-				</div>
+					</div>
 					<div class="form-check text-center pb-2">
-                    {{ Form::checkbox('terms-and-services',['class'=> 'form-check-input']) }} <!-- checkbox -->
-					{{ Form::label('terms-and-services','I have read and agree on the.') }}
-								<a href="#" data-toggle="modal" data-target="#modalTerms"
-									>Terms and Services </a
-								> <p>of the meDPulse website</p>
+						<input
+							type="checkbox"
+							class="form-check-input"
+							id="terms-and-services"
+						/>
+						<label class="form-check-label" for="terms-and-services"
+							>I have read and agree on the
+							<a href="#" data-toggle="modal" data-target="#modalTerms"
+								>Terms and Services</a
+							>
+							of the meDPulse website.
+						</label>
 						<!-- Modal -->
 						<div
 							class="modal fade"
@@ -172,9 +231,15 @@
 						</div>
 					</div>
 					<div class="text-center">
-						{{ Form::button('Submit'['class' => 'btn btn-primary', 'type' => 'submit'] ) }}
-						{{ Form::button('Cancel'['class' => 'btn btn-primary', 'type' => 'submit'] ) }}
+						<p>
+							<button type="submit" class="btn btn-primary" id="BtnSubmit">
+								Submit
+							</button>
+							<button type="submit" class="btn btn-primary" id="BtnCancel">
+								Cancel
+							</button>
+						</p>
 					</div>
+				</form>
 			</div>
 		</div>
-{!! Form::close()!! }
