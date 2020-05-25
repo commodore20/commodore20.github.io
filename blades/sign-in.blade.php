@@ -13,37 +13,49 @@
 							<h3>Login</h3>
 							<br />
 						</div>
-{!! Form::open(['url' => 'foo/bar', 'class' => 'form-contain']) !!}
+						<form class="form-contain">
 							<div class="form-group">
-                            {{ Form::label('contact', 'Contact Number:') }} 
-		                    {{ Form::text('contact', $value = null, ['class' => 'form-control text-box single-line', 'maxlength' => '11', 'placeholder' => 'First Name']) }}
-
+								<label for="contact">Contact Number: </label>
+								<input
+									type="text"
+									class="form-control"
+									id="contact"
+									placeholder=""
+								/>
 							</div>
 							<div class="form-group">
-                            {{ Form::label('pin-digit', '6-Pin Digit:') }}
-                                    <div class="input-group">
-                                        {{ Form::password('pin-digit', $value = null, ['class' => 'form-control  text-box single-line', 'maxlength' => '6', 'inputmode' => 'numeric', 'placeholder' => '******']) }}
-                                        <span class="input-group-addon">
-                                            <span class="fa fa-eye"></span>
-                                        </span>
-                                    </div>
+								<label for="pin-digit">6-Digit Pin: </label>
+								<input
+									type="password"
+									class="form-control"
+									id="pin-digit"
+									placeholder=""
+								/>
 							</div>
 							<div class="form-group justify-content-center">
 								<div class="form-check">
-                                {{ Form::checkbox('remember-pass',['class'=> 'form-check-input']) }}
-                                {{ Form::label('remember-pass','Remember Password') }}
+									<input
+										type="checkbox"
+										class="form-check-input"
+										id="exampleCheck1"
+									/>
+									<label class="form-check-label" for="exampleCheck1"
+										>Remember Password</label
+									>
 									<p class="p-1">
-										<a href="">Forgot Your Password ?</a>
+										<a href="loginalternative.html">Forgot Your Password ?</a>
 									</p>
 								</div>
 								<div class="text-center">
-                                <i class="fa fa-sign-in" aria-hidden="true"></i>
-                                {{ Form::button('Sign in'['class' => 'btn btn-primary', 'type' => 'submit'] ) }}
+									<button type="submit" class="btn btn-primary">
+										<i class="fa fa-sign-in"> </i>
+										<a href="main.html"></a>
+										Submit
+									</button>
 								</div>
 							</div>
-						
+						</form>
 					</div>
 				</div>
 			</div>
 		</div>
-{!! Form::close()!! }
