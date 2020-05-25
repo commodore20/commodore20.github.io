@@ -1,6 +1,7 @@
        <!--  index.html for reference-->
        <!-- Created May 23, 2020-->
-       <div class="py-50 px-md-4 mb-3 container-fluid" id="wrapper">
+       <!-- Updated May 25, 2020--> <!-- Laravel Syntax removed, changed to HTML forms syntax-->
+      		<div class="py-50 px-md-4 mb-3 container-fluid" id="wrapper">
 			<div class="container-fluid">
 				<div
 					class="d-flex flex-column flex-xl-row align-items-center p-3 px-md-4 mb-3 bgh"
@@ -13,7 +14,7 @@
 						<a class="p-2 text" href="Signup.html"
 							><i class="fa fa-sign-in" aria-hidden="true"></i> Sign Up</a
 						>
-						<a class="p-2 text" href="Login.html"
+						<a class="p-2 text" href="navbar-sidebar.html"
 							><i class="fa fa-book" aria-hidden="true"></i> Login</a
 						>
 					</nav>
@@ -28,28 +29,89 @@
 								Use the Quick Search to find the doctor you are looking for.
 							</h3>
 						</div>
-                    </div>
-    {!! Form::open(['url' => 'foo/bar', 'class' => 'form-contain']) !!}
-					
+					</div>
+
+					<form
+						action=""
+						autocomplete="off"
+						id="FrmSearch"
+						method="post"
+						novalidate="novalidate"
+					>
 						<input name="__RequestVerificationToken" type="hidden" value="" />
 						<div class="pl-5 row pt-md-3">
 							<div class="col-md-3 col-xl-3 form-group">
 								<div class="">
-                                {{ Form::text('specialty', $value = null, ['class' => 'form-control text-box single-line', 'placeholder' => 'Specialty']) }}
+									<input
+										data-val="true"
+										data-val-number="The field Specialty must be a number."
+										data-val-required="The Specialty field is required."
+										id="SpecialtyId"
+										name="SpecialtyId"
+										type="hidden"
+										value=""
+									/>
+									<input
+										type="text"
+										id="SpecialtyName"
+										name="SpecialtyName"
+										value=""
+										required=""
+										placeholder="Specialty"
+										autofocus=""
+										class="form-control text-box single-line"
+										data-val="true"
+										data-val-length="The field Specialty must be a string with a maximum length of 60."
+										data-val-length-max="60"
+										data-val-required="The Specialty field is required."
+									/>
+
+									<span
+										class="field-validation-valid"
+										data-valmsg-for="SpecialtyId"
+										data-valmsg-replace="true"
+									></span>
+									<span
+										id="ErrMsgSpecialty"
+										class="field-validation-valid"
+										data-valmsg-for="SpecialtyName"
+										data-valmsg-replace="true"
+									></span>
 								</div>
 							</div>
 							<div class="col-md-3 col-xl-3 form-group">
-                            {{ Form::select('location', array('select' => 'Select Location', 'digos' => 'Digos'),'digos', ['class' => 'form-control text-box single-line', 'placeholder' => 'Specialty']) }}
+								<select
+									class="form-control"
+									data-val="true"
+									data-val-number="The field Location must be a number."
+									data-val-required="The Location field is required."
+									id="LocationId"
+									name="LocationId"
+								>
+									<option value="">Select Location</option>
+								</select>
+								<span
+									class="field-validation-valid"
+									data-valmsg-for="LocationId"
+									data-valmsg-replace="true"
+								></span>
 							</div>
 							<div class="col-md-3 col-xl-3 form-group">
-                            {{ Form::text('doctors', $value = null, ['class' => 'form-control text-box single-line', 'placeholder' => 'Physician']) }}
+								<input
+									type="text"
+									id="doctors"
+									name="doctors"
+									placeholder="Physician"
+									class="form-control"
+								/>
 							</div>
 							<div class="col-md-3 col- form-group text-center text-md-left">
-                            {{ Form::button('Search'['class' => 'btn btn-primary', 'type' => 'submit'] ) }}
+								<button type="submit" id="BtnSearch" class="btn btn-primary">
+									<i class="fa fa-search"></i>&nbsp; Search
+								</button>
 							</div>
 						</div>
-				   
-	{!! Form::close()!! }
+					</form>
 				</div>
 			</div>
 			<hr />
