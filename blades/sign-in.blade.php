@@ -1,5 +1,6 @@
 <!-- Created May 20, 2020-->
 <!-- Signing In Via Mobile Number-->
+<!-- Updated May 25, 2020 -- > <!-- Laravel Syntax removed, changed to HTML form Syntax -->
 		<div class="container-fluid bods py-5">
 			<div class="container"></div>
 			<div class="row">
