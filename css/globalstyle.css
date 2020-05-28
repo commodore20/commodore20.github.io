@@ -398,6 +398,17 @@ select.form-control-lg:not([size]):not([multiple]) {
 	);
 }
 
+.nabi {
+	background: rgb(11, 150, 219);
+	background: linear-gradient(
+		90deg,
+		rgba(11, 150, 219, 1) 0%,
+		rgba(105, 205, 255, 1) 14%,
+		rgba(105, 205, 255, 1) 84%,
+		rgba(11, 150, 219, 1) 100%
+	);
+}
+
 .navi {
 	font-family: "Century Gothic";
 }
@@ -425,6 +436,7 @@ ul li a#hov:hover {
 		rgba(242, 244, 245, 1) 85%,
 		rgba(186, 231, 250, 1) 100%
 	);
+	background-repeat: no-repeat;
 }
 
 .fant {
@@ -461,4 +473,35 @@ ul li a#hov:hover {
 	bottom: 20px;
 	right: 20px;
 	display: none;
+}
+
+#eye,
+#eye:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+/* class for body*/
+.bg-design {
+	background-color: rgba(102, 112, 115, 0.1);
+}
+
+.bg-white {
+	background-color: white;
+}
+
+.nav-for-guest {
+	background: rgb(15, 173, 252);
+	background: linear-gradient(
+		90deg,
+		rgba(15, 173, 252, 1) 0%,
+		rgba(149, 220, 255, 1) 16%,
+		rgba(105, 205, 255, 1) 82%,
+		rgba(15, 173, 252, 1) 100%
+	);
+}
+
+.nav-brand-font {
+	font-family: "Rubik", sans-serif;
+	color: white;
 }
