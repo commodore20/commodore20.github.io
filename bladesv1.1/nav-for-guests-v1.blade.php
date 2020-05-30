@@ -1,6 +1,5 @@
     
   <!-- Blade added May 28, 2020 -->
-  <!-- abcd -->
   <!-- This is a blade navbar that has a search bar -->  
         <nav class="navbar navbar-expand-lg navbar-light bg-light nav-for-guest">
 			<!-- Navbar Brand, only text not an image-->

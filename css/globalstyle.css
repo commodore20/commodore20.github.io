@@ -505,3 +505,77 @@ ul li a#hov:hover {
 	font-family: "Rubik", sans-serif;
 	color: white;
 }
+
+.myInput {
+	padding: 20px;
+	margin-top: -6px;
+	border: 0;
+	border-radius: 0;
+	background: #f1f1f1;
+}
+
+.gradient-sidebar-client {
+	background: rgb(113, 208, 255);
+	background: linear-gradient(
+		180deg,
+		rgba(113, 208, 255, 1) 0%,
+		rgba(199, 235, 253, 1) 14%,
+		rgba(199, 235, 253, 1) 86%,
+		rgba(113, 208, 255, 1) 100%
+	);
+}
+
+.nav-client {
+	background: rgb(113, 208, 255);
+	background: linear-gradient(
+		90deg,
+		rgba(113, 208, 255, 1) 0%,
+		rgba(199, 235, 253, 1) 14%,
+		rgba(199, 235, 253, 1) 86%,
+		rgba(113, 208, 255, 1) 100%
+	);
+}
+
+.table-responsive {
+	display: table;
+}
+
+.poppins-font {
+	font-family: "Poppins", sans-serif;
+}
+
+.slot-nav ul li a {
+	text-decoration: none;
+	color: rgb(87, 79, 79);
+}
+
+.slot-nav ul li a:hover {
+	color: rgb(219, 56, 56);
+}
+
+.doc-time {
+	background-color: #d9534f;
+	border: 1px solid #d43f3a;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 14px;
+	margin: 10px 10px 0 0;
+	padding: 6px 15px;
+}
+
+.doc-slots {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.gray-bg {
+	background-color: rgba(73, 65, 65, 0.2);
+}
+.slot-nav {
+	border-bottom: 1px solid #f0f0f0;
+	border-radius: 4px 4px 0 0;
+	padding: 10px 20px;
+}

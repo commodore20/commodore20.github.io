@@ -35,6 +35,12 @@
 			href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap"
 			rel="stylesheet"
 		/>
+		<!-- Poppins font-->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Font Awesome-->
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
