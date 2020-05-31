@@ -571,11 +571,69 @@ ul li a#hov:hover {
 	flex-wrap: wrap;
 }
 
+/* Gray background */
 .gray-bg {
 	background-color: rgba(73, 65, 65, 0.2);
 }
+
+/* doctor's sched navigation */
 .slot-nav {
 	border-bottom: 1px solid #f0f0f0;
 	border-radius: 4px 4px 0 0;
 	padding: 10px 20px;
+}
+
+/* logo images */
+.img-logo-sm {
+	width: 180px;
+	height: 65px;
+}
+
+/* sidebar a hover*/
+#list-menu a:hover {
+	font-weight: bold;
+}
+
+.gradient-doc-nav {
+	background: rgb(142, 200, 251);
+	background: linear-gradient(
+		90deg,
+		rgba(32, 142, 255, 1) 0%,
+		rgba(142, 200, 251, 1) 16%,
+		rgba(142, 200, 251, 1) 84%,
+		rgba(32, 142, 255, 1) 100%
+	);
+}
+
+.gradient-doc-sidebar {
+	background: rgb(131, 194, 251);
+	background: linear-gradient(
+		180deg,
+		rgba(131, 194, 251, 0.4) 0%,
+		rgba(95, 157, 212, 1) 48%,
+		rgba(95, 157, 212, 1) 52%,
+		rgba(142, 200, 251, 0.4) 100%
+	);
+}
+
+.gradient-superadmin-nav {
+	background: rgb(127, 127, 127);
+	background: linear-gradient(
+		90deg,
+		rgba(65, 59, 59, 1) 0%,
+		rgba(127, 127, 127, 1) 16%,
+		rgba(127, 127, 127, 1) 84%,
+		rgba(65, 59, 59, 1) 100%
+	);
+}
+
+.gradient-superadmin-sidebar {
+	background: rgb(51, 44, 44);
+	background: linear-gradient(
+		180deg,
+		rgba(51, 44, 44, 1) 0%,
+		rgba(127, 125, 125, 1) 21%,
+		rgba(127, 125, 125, 1) 79%,
+		rgba(51, 44, 44, 1) 100%
+	);
 }

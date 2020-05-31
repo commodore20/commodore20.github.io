@@ -1,31 +1,14 @@
-        	<!-- Created May 23, 2020 -->
-		<!-- Updated May 25, 2020 --> <!-- Laravel Syntax removed, changed to HTML form syntax -->
-		
-	<div class="container-fluid">
-		<div class="container">
+        <div class="container">
 			<div class="row justify-content-around py-4">
+{!! Form::open(['url' => 'foo/bar', 'class' => 'form-contain']) !!}
 				<div class="col-md-5 border rounded shadow-sm">
 					<div class="form-group">
-						<label for="address">Full Address:</label>
-						<input
-							type="text"
-							id="address"
-							name="address"
-							class="form-control text-box single-line"
-							placeholder="Street, City/Municipality, Province"
-						/>
+                    {{ Form::label('address', 'Full Address:') }} 
+					{{ Form::text('address', $value = null, ['class' => 'form-control text-box single-line', 'placeholder' => 'Street, City/Municipality, Province']) }}
 					</div>
 					<div class="form-group">
-						<label for="zip-code">Zip Code:</label>
-						<input
-							type="text"
-							id="zip-code"
-							name="zip-code"
-							class="form-control text-box single-line"
-							pattern="\d*"
-							placeholder=""
-							maxlength="4"
-						/>
+                    {{ Form::label('zip-code', 'Zip Code:') }} 
+					{{ Form::text('zip-code', $value = null, ['class' => 'form-control text-box single-line', 'pattern' => '\d*', 'maxlength'=>'4', 'placeholder' => '']) }}
 					</div>
 					<!--Modal Anchor-->
 					<a href="" data-toggle="modal" data-target="#exampleModalCenter"
@@ -46,64 +29,32 @@
 								<div class="modal-header">
 									<h5 class="modal-title" id="exampleModalLongTitle">
 										DavSur Zip Code Guide
-									</h5>
-									<button
-										type="button"
-										class="close"
-										data-dismiss="modal"
-										aria-label="Close"
-									>
-										<span aria-hidden="true">&times;</span>
-									</button>
+                                    </h5>
 								</div>
 								<div class="modal-body">
 									<img src="images/zip-code.jpg" alt="" />
 								</div>
 								<div class="modal-footer">
-									<button
-										type="button"
-										class="btn btn-secondary"
-										data-dismiss="modal"
-									>
-										Close
-									</button>
+                                {{ Form::button('Close'['class' => 'btn btn-secondary close', 'type' => 'button', 'data-dismiss' => 'modal', 'aria-label' => 'close'] ) }}
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="text-center">
-						<p>
-							<button type="submit" class="btn btn-primary" id="BtnSubmit">
-								Submit
-							</button>
-							<button type="submit" class="btn btn-primary" id="BtnCancel">
-								Cancel
-							</button>
-						</p>
+                    {{ Form::button('Submit'['class' => 'btn btn-primary', 'type' => 'submit'] ) }}
+					{{ Form::button('Cancel'['class' => 'btn btn-primary', 'type' => 'submit'] ) }}
 					</div>
 				</div>
 				<div class="col-md-5 border rounded shadow-sm">
 					<div class="form-group pt-5">
-						<label for="specialty">Specialty:</label>
-						<input
-							type="text"
-							id="specialty"
-							name="specialty"
-							class="form-control text-box single-line"
-							placeholder="Specialty"
-						/>
+                    {{ Form::label('specialty', 'Specialty:') }} 
+					{{ Form::text('specialty', $value = null, ['class' => 'form-control text-box single-line', 'placeholder' => 'Specialty']) }}
 					</div>
 					<div class="text-center">
-						<p>
-							<button type="submit" class="btn btn-primary" id="BtnSubmit">
-								Submit
-							</button>
-							<button type="submit" class="btn btn-primary" id="BtnCancel">
-								Cancel
-							</button>
-						</p>
+                    {{ Form::button('Submit'['class' => 'btn btn-primary', 'type' => 'submit'] ) }}
+					{{ Form::button('Cancel'['class' => 'btn btn-primary', 'type' => 'submit'] ) }}
 					</div>
-				</div>
+                </div>
 			</div>
 		</div>
-	</div>
+{!! Form::close()!! }

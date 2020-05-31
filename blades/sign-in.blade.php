@@ -1,6 +1,5 @@
 <!-- Created May 20, 2020-->
 <!-- Signing In Via Mobile Number-->
-<!-- Updated May 25, 2020 -- > <!-- Laravel Syntax removed, changed to HTML form Syntax -->
 		<div class="container-fluid bods py-5">
 			<div class="container"></div>
 			<div class="row">
@@ -10,53 +9,42 @@
 				>
 					<div class="content-header">
 						<div class="title-primary text-center">
-							<img src="images/logo-sm.png" alt="" />
+							<!--Updated img for clearer view -->
+						<img src="images/logo-sm.png" alt="" class="img-logo-sm pb-3" />
 							<h3>Login</h3>
 							<br />
 						</div>
-						<form class="form-contain">
+{!! Form::open(['url' => 'foo/bar', 'class' => 'form-contain']) !!}
 							<div class="form-group">
-								<label for="contact">Contact Number: </label>
-								<input
-									type="text"
-									class="form-control"
-									id="contact"
-									placeholder=""
-								/>
+                            {{ Form::label('contact', 'Contact Number:') }} 
+		                    {{ Form::text('contact', $value = null, ['class' => 'form-control text-box single-line', 'maxlength' => '11', 'placeholder' => 'First Name']) }}
+
 							</div>
 							<div class="form-group">
-								<label for="pin-digit">6-Digit Pin: </label>
-								<input
-									type="password"
-									class="form-control"
-									id="pin-digit"
-									placeholder=""
-								/>
+                            {{ Form::label('pin-digit', '6-Pin Digit:') }}
+                                    <div class="input-group">
+                                        {{ Form::password('pin-digit', $value = null, ['class' => 'form-control  text-box single-line', 'maxlength' => '6', 'inputmode' => 'numeric', 'placeholder' => '******']) }}
+                                        <span class="input-group-addon">
+                                            <span class="fa fa-eye"></span>
+                                        </span>
+                                    </div>
 							</div>
 							<div class="form-group justify-content-center">
 								<div class="form-check">
-									<input
-										type="checkbox"
-										class="form-check-input"
-										id="exampleCheck1"
-									/>
-									<label class="form-check-label" for="exampleCheck1"
-										>Remember Password</label
-									>
+                                {{ Form::checkbox('remember-pass',['class'=> 'form-check-input']) }}
+                                {{ Form::label('remember-pass','Remember Password') }}
 									<p class="p-1">
-										<a href="loginalternative.html">Forgot Your Password ?</a>
+										<a href="">Forgot Your Password ?</a>
 									</p>
 								</div>
 								<div class="text-center">
-									<button type="submit" class="btn btn-primary">
-										<i class="fa fa-sign-in"> </i>
-										<a href="main.html"></a>
-										Submit
-									</button>
+                                <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                {{ Form::button('Sign in'['class' => 'btn btn-primary', 'type' => 'submit'] ) }}
 								</div>
 							</div>
-						</form>
+						
 					</div>
 				</div>
 			</div>
 		</div>
+{!! Form::close()!! }
