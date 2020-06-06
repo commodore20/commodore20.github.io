@@ -637,3 +637,45 @@ ul li a#hov:hover {
 		rgba(51, 44, 44, 1) 100%
 	);
 }
+
+.container-event {
+	position: fixed;
+	z-index: 2;
+	background-color: #eeeeee;
+}
+
+.fc-event {
+	margin: 5px 0;
+	cursor: move;
+}
+
+/* customized buttons */
+
+.bg-info-light {
+	background-color: rgba(2, 182, 179, 0.12) !important;
+	color: #1db9aa !important;
+}
+.bg-primary-light {
+	background-color: rgba(17, 148, 247, 0.12) !important;
+	color: #2196f3 !important;
+}
+.bg-danger-light {
+	background-color: rgba(242, 17, 54, 0.12) !important;
+	color: #e63c3c !important;
+}
+.bg-warning-light {
+	background-color: rgba(255, 152, 0, 0.12) !important;
+	color: #f39c12 !important;
+}
+.bg-success-light {
+	background-color: rgba(15, 183, 107, 0.12) !important;
+	color: #26af48 !important;
+}
+.bg-purple-light {
+	background-color: rgba(197, 128, 255, 0.12) !important;
+	color: #c580ff !important;
+}
+.bg-default-light {
+	background-color: rgba(40, 52, 71, 0.12) !important;
+	color: #283447 !important;
+}
