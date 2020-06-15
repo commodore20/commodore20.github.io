@@ -182,7 +182,7 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<h5 class="modal-title" id="exampleModalLongTitle">
-								Edit Event
+								Add Slots
 							</h5>
 							<button
 								type="button"
@@ -194,21 +194,150 @@
 							</button>
 						</div>
 						<div class="modal-body">
-							<div class="form-group">
-								<label for="editName"></label>
-								<input type="" class="form-control" />
+							<div class="container-fluid">
+								<div class="container mt-4">
+									<div class="row">
+										<div class="col-md-12 border rounded shadow-sm px-5 py-3">
+											<div class="row">
+												<div class="col-md-2"><h6 class="pt-2">Day:</h6></div>
+												<div class="col-md-10 form-group">
+													<select class="form-control" name="day" id="day">
+														<option value="">--Select--</option>
+														<option value="sunday">Sunday</option>
+														<option value="monday" selected>Monday</option>
+														<option value="tuesday">Tuesday</option>
+														<option value="wednesday">Wednesday</option>
+														<option value="thursday">Thursday</option>
+														<option value="friday">Friday</option>
+														<option value="saturday">Saturday</option>
+													</select>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-2">
+													<h6 class="">Clinic Hours:</h6>
+												</div>
+												<div class="col-md-10 form-group">
+													<select class="form-control" name="time" id="time">
+														<option value="">--Select--</option>
+														<option value="time1">7:00 - 8:00 am</option>
+														<option value="time2">8:00 - 9:00 am</option>
+														<option value="time3">9:00 - 10:00 am</option>
+														<option value="time4" selected
+															>10:00 - 11:00 am</option
+														>
+														<option value="time5">11:00 am - 12:00 pm</option>
+														<option value="time6">1:00 - 2:00 pm</option>
+														<option value="time7">2:00 - 3:00 pm</option>
+														<option value="time8">3:00 - 4:00 pm</option>
+														<option value="time9">4:00 - 5:00 pm</option>
+													</select>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-2"><h6 class="pt-2">Slots:</h6></div>
+												<div class="col-md-10 form-group">
+													<input
+														type="text"
+														id="slots"
+														name="slots"
+														onkeypress="javascript:return isNumber(event)"
+														class="form-control"
+														maxlength="1"
+														placeholder="Number of Slots"
+													/>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="modal-footer">
+							<button type="button" class="btn btn-light" data-dismiss="modal">
+								Cancel
+							</button>
+							<button type="button" class="btn btn-primary">
+								Add Slot
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Modal for Delete Event-->
+			<div
+				class="modal fade"
+				id="deleteEvent"
+				tabindex="-1"
+				role="dialog"
+				aria-labelledby="exampleModalLongTitle"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">
+								Confirm Booking
+							</h5>
 							<button
 								type="button"
-								class="btn btn-outline-secondary"
+								class="close"
 								data-dismiss="modal"
+								aria-label="Close"
 							>
-								Close
+								<span aria-hidden="true">&times;</span>
 							</button>
-							<button type="button" class="btn btn-success">
-								Save Changes
+						</div>
+						<div class="modal-body">
+							<div class="container-fluid poppins-font">
+								<div class="container mt-3">
+									<div class="row">
+										<div class="col-md-12 pl-5 border rounded shadow-sm">
+											<div class="row justify-content-between pt-4">
+												<div class="col-md-6">
+													<p>Day: <strong>Sunday</strong></p>
+												</div>
+												<div class="col-md-6">
+													<p>Time: <strong>8:00 - 9:00 am</strong></p>
+												</div>
+											</div>
+											<div class="pb-4">
+												<h6>With a Patient:</h6>
+												<input type="text" class="form-control" />
+											</div>
+											<div class="pb-3">
+												<h6 class="font-weight-bold">Doctor's Information</h6>
+												<div class="row pb-3">
+													<div class="col-md-4 pr-3">
+														<img
+															src="images/doc-mockup.png"
+															class="rounded img-100x100"
+															alt="doc"
+														/>
+													</div>
+													<div class="col-md-8">
+														<small>Name: <strong>Rex Tee</strong></small> <br />
+														<small
+															>Specialty: <strong>Pediatrician</strong></small
+														><br />
+														<small
+															>Clinic:
+															<strong>Lorem Ipsum Clinic</strong></small
+														><br />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-light" data-dismiss="modal">
+								Cancel
+							</button>
+							<button type="button" class="btn btn-primary">
+								Confirm
 							</button>
 						</div>
 					</div>
@@ -325,6 +454,15 @@
 				});
 				calendar.render();
 			});
+		</script>
+		<script>
+			function isNumber(evt) {
+				var iKeyCode = evt.which ? evt.which : evt.keyCode;
+				if (iKeyCode != 46 && iKeyCode > 31 && (iKeyCode < 48 || iKeyCode > 57))
+					return false;
+
+				return true;
+			}
 		</script>
 	</body>
 </html>
