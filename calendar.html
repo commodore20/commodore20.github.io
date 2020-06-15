@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="images/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="images/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="images/favicon-16x16.png"
+		/>
+		<!-- Custom CSS for Calendar-->
+		<link rel="stylesheet" href="css/calendar-style.css" />
+		<!-- /Custom CSS for Calendar-->
+
+		<link href="plugins/fullcalendar-4.4.2/core/main.css" rel="stylesheet" />
+		<link href="plugins/fullcalendar-4.4.2/daygrid/main.css" rel="stylesheet" />
+
+		<script src="plugins/fullcalendar-4.4.2/core/main.js"></script>
+		<script src="plugins/fullcalendar-4.4.2/daygrid/main.js"></script>
+		<!-- Fontawesome 5 CSS-->
+		<link rel="stylesheet" href="css/all.min.css" />
+		<link rel="stylesheet" href="css/fontawesome.min.css" />
+		<!-- /Fontawesome 5 CSS-->
+		<link rel="manifest" href="images/site.webmanifest" />
+		<link rel="stylesheet" href="css/simple-sidebar.css" />
+		<link rel="stylesheet" href="css/globalstyle.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<!-- Stylesheet font montserrat-->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro&display=swap"
+			rel="stylesheet"
+		/>
+		<!--New stylesheet Rubik font-->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Poppins font-->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Font Awesome-->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<!--Bootstrap CDN-->
+		<link
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+
+		<!-- Bootstrap Date-time Picker CSS-->
+		<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+
+		<!-- Full Calendar CSS -->
+		<link rel="stylesheet" href="css/fullcalendar.min.css" />
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				var calendarEl = document.getElementById("calendar");
+
+				var calendar = new FullCalendar.Calendar(calendarEl, {
+					plugins: ["dayGrid"],
+				});
+
+				calendar.render();
+			});
+		</script>
+		<title>MeDPulse | Be at ease without disease</title>
+	</head>
+	<body>
+		<!-- Main Wrapper -->
+		<div class="main-wrapper">
+			<!-- Breadcrumb -->
+			<div class="breadcrumb-bar">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col">
+							<nav aria-label="breadcrumb" class="page-breadcrumb">
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+									<li class="breadcrumb-item active" aria-current="page">
+										Calendar
+									</li>
+								</ol>
+							</nav>
+							<h2 class="breadcrumb-title">Calendar</h2>
+						</div>
+						<div class="col-auto text-right float-right ml-auto">
+							<a
+								href="#"
+								class="btn btn-primary btn-sm"
+								data-toggle="modal"
+								data-target="#add_event"
+								>Create Event</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /Breadcrumb -->
+
+			<!-- Page Content -->
+			<div class="content">
+				<div class="container-fluid">
+					<div class="row">
+						<!-- Calendar Events -->
+						<div class="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
+							<div class="card">
+								<div class="card-header">
+									<h4 class="card-title mb-0">Drag & Drop Event</h4>
+								</div>
+								<div class="card-body">
+									<div id="calendar-events" class="mb-3">
+										<div class="calendar-events" data-class="bg-info">
+											<i class="fas fa-circle text-info"></i> My Event One
+										</div>
+										<div class="calendar-events" data-class="bg-success">
+											<i class="fas fa-circle text-success"></i> My Event Two
+										</div>
+										<div class="calendar-events" data-class="bg-danger">
+											<i class="fas fa-circle text-danger"></i> My Event Three
+										</div>
+										<div class="calendar-events" data-class="bg-warning">
+											<i class="fas fa-circle text-warning"></i> My Event Four
+										</div>
+									</div>
+									<div class="checkbox mb-3">
+										<input id="drop-remove" type="checkbox" />
+										<label for="drop-remove">
+											Remove after drop
+										</label>
+									</div>
+									<a
+										href="#"
+										data-toggle="modal"
+										data-target="#add_new_event"
+										class="btn btn-primary btn-block"
+									>
+										<i class="fas fa-plus"></i> Add Category
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- /Calendar Events -->
+
+						<!-- Calendar -->
+						<div class="col-md-7 col-lg-8 col-xl-9">
+							<div class="card">
+								<div class="card-body">
+									<div id="calendar"></div>
+								</div>
+							</div>
+						</div>
+						<!-- /Calendar -->
+					</div>
+				</div>
+			</div>
+			<!-- /Page Content -->
+
+			<!-- Footer -->
+			<footer class="footer">
+				<!-- Footer Top -->
+				<div class="footer-top">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-lg-3 col-md-6">
+								<!-- Footer Widget -->
+								<div class="footer-widget footer-about">
+									<div class="footer-logo">
+										<img src="assets/img/footer-logo.png" alt="logo" />
+									</div>
+									<div class="footer-about-content">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua.
+										</p>
+										<div class="social-icon">
+											<ul>
+												<li>
+													<a href="#" target="_blank"
+														><i class="fab fa-facebook-f"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#" target="_blank"
+														><i class="fab fa-twitter"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#" target="_blank"
+														><i class="fab fa-linkedin-in"></i
+													></a>
+												</li>
+												<li>
+													<a href="#" target="_blank"
+														><i class="fab fa-instagram"></i
+													></a>
+												</li>
+												<li>
+													<a href="#" target="_blank"
+														><i class="fab fa-dribbble"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- /Footer Widget -->
+							</div>
+
+							<div class="col-lg-3 col-md-6">
+								<!-- Footer Widget -->
+								<div class="footer-widget footer-menu">
+									<h2 class="footer-title">For Patients</h2>
+									<ul>
+										<li><a href="search.html">Search for Doctors</a></li>
+										<li><a href="login.html">Login</a></li>
+										<li><a href="register.html">Register</a></li>
+										<li><a href="booking.html">Booking</a></li>
+										<li>
+											<a href="patient-dashboard.html">Patient Dashboard</a>
+										</li>
+									</ul>
+								</div>
+								<!-- /Footer Widget -->
+							</div>
+
+							<div class="col-lg-3 col-md-6">
+								<!-- Footer Widget -->
+								<div class="footer-widget footer-menu">
+									<h2 class="footer-title">For Doctors</h2>
+									<ul>
+										<li><a href="appointments.html">Appointments</a></li>
+										<li><a href="chat.html">Chat</a></li>
+										<li><a href="login.html">Login</a></li>
+										<li><a href="doctor-register.html">Register</a></li>
+										<li>
+											<a href="doctor-dashboard.html">Doctor Dashboard</a>
+										</li>
+									</ul>
+								</div>
+								<!-- /Footer Widget -->
+							</div>
+
+							<div class="col-lg-3 col-md-6">
+								<!-- Footer Widget -->
+								<div class="footer-widget footer-contact">
+									<h2 class="footer-title">Contact Us</h2>
+									<div class="footer-contact-info">
+										<div class="footer-address">
+											<span><i class="fas fa-map-marker-alt"></i></span>
+											<p>
+												3556 Beech Street, San Francisco,<br />
+												California, CA 94108
+											</p>
+										</div>
+										<p>
+											<i class="fas fa-phone-alt"></i>
+											+1 315 369 5943
+										</p>
+										<p class="mb-0">
+											<i class="fas fa-envelope"></i>
+											doccure@example.com
+										</p>
+									</div>
+								</div>
+								<!-- /Footer Widget -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Footer Top -->
+
+				<!-- Footer Bottom -->
+				<div class="footer-bottom">
+					<div class="container-fluid">
+						<!-- Copyright -->
+						<div class="copyright">
+							<div class="row">
+								<div class="col-md-6 col-lg-6">
+									<div class="copyright-text">
+										<p class="mb-0">
+											&copy; 2020 Doccure. All rights reserved.
+										</p>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-6">
+									<!-- Copyright Menu -->
+									<div class="copyright-menu">
+										<ul class="policy-menu">
+											<li>
+												<a href="term-condition.html">Terms and Conditions</a>
+											</li>
+											<li><a href="privacy-policy.html">Policy</a></li>
+										</ul>
+									</div>
+									<!-- /Copyright Menu -->
+								</div>
+							</div>
+						</div>
+						<!-- /Copyright -->
+					</div>
+				</div>
+				<!-- /Footer Bottom -->
+			</footer>
+			<!-- /Footer -->
+		</div>
+		<!-- /Main Wrapper -->
+
+		<!-- Add Event Modal -->
+		<div id="add_event" class="modal custom-modal fade" role="dialog">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Add Event</h4>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label>Event Name <span class="text-danger">*</span></label>
+								<input class="form-control" type="text" />
+							</div>
+							<div class="form-group">
+								<label>Event Date <span class="text-danger">*</span></label>
+								<div class="cal-icon">
+									<input class="form-control datetimepicker" type="text" />
+								</div>
+							</div>
+							<div class="submit-section">
+								<button class="btn btn-primary submit-btn">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Add Event Modal -->
+
+		<!-- Add Event Modal -->
+		<div class="modal custom-modal fade none-border" id="my_event">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Add Event</h4>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-hidden="true"
+						>
+							&times;
+						</button>
+					</div>
+					<div class="modal-body"></div>
+					<div class="modal-footer justify-content-center">
+						<button type="button" class="btn btn-success save-event submit-btn">
+							Create event
+						</button>
+						<button
+							type="button"
+							class="btn btn-danger delete-event submit-btn"
+							data-dismiss="modal"
+						>
+							Delete
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Add Event Modal -->
+
+		<!-- Add Category Modal -->
+		<div class="modal custom-modal fade" id="add_new_event">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Add Category</h4>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-hidden="true"
+						>
+							&times;
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label>Category Name</label>
+								<input
+									class="form-control form-white"
+									placeholder="Enter name"
+									type="text"
+									name="category-name"
+								/>
+							</div>
+							<div class="form-group">
+								<label>Choose Category Color</label>
+								<select
+									class="form-control form-white"
+									data-placeholder="Choose a color..."
+									name="category-color"
+								>
+									<option value="success">Success</option>
+									<option value="danger">Danger</option>
+									<option value="info">Info</option>
+									<option value="primary">Primary</option>
+									<option value="warning">Warning</option>
+									<option value="inverse">Inverse</option>
+								</select>
+							</div>
+							<div class="submit-section text-center">
+								<button
+									type="button"
+									class="btn btn-primary save-category submit-btn"
+									data-dismiss="modal"
+								>
+									Save
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Add Category Modal -->
+
+		<!-- jQuery -->
+		<script src="assets/js/jquery.min.js"></script>
+
+		<!-- Bootstrap Core JS -->
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+
+		<!-- Scripts-->
+
+		<!-- Datetime Picker JS-->
+		<script src="js/moment.min.js"></script>
+		<script src="js/bootstrap-datetimepicker.min.js"></script>
+		<!--Full Calendar JS-->
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/fullcalendar.min.js"></script>
+		<script src="js/jquery.fullcalendar.min.js"></script>
+		<!-- Custom Calendar JS-->
+		<script src="js/calendar-style.js"></script>
+	</body>
+</html>

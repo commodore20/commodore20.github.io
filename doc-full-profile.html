@@ -152,18 +152,26 @@
 													<div class="text-center">
 														<button
 															type="submit"
-															class="btn btn-primary"
+															class="btn btn-outline-primary"
 															id="btn-appoint"
 														>
-															<i class="fa fa-search-plus"></i> Book an
-															Appointment
+															<i class="fa fa-search-plus"></i> Book
 														</button>
 														<button
 															type="submit"
-															class="btn btn-primary"
+															class="btn btn-outline-success"
 															id="btn-chat"
 														>
-															<i class="fa fa-envelope"></i> Chat Doctor
+															<i class="fa fa-envelope"></i> Chat
+														</button>
+														<button
+															type="submit"
+															class="btn btn-outline-info"
+															id="btn-chat"
+															data-toggle="modal"
+															data-target="#viewSched"
+														>
+															<i class="fa fa-calendar"></i> Schedule
 														</button>
 													</div>
 												</div>
@@ -171,6 +179,211 @@
 										</div>
 									</div>
 								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Modal event for View Schedule -->
+				<div
+					class="modal fade"
+					id="viewSched"
+					tabindex="-1"
+					role="dialog"
+					aria-labelledby="exampleModalLongTitle"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLongTitle">
+									Clinic Schedule
+								</h5>
+								<button
+									type="button"
+									class="close"
+									data-dismiss="modal"
+									aria-label="Close"
+								>
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div class="container poppins-font">
+									<div class="row">
+										<div class="col-md-12">
+											<nav class="slot-nav">
+												<ul class="nav nav-tabs nav-justified">
+													<li class="nav-item">
+														<a
+															data-toggle="tab"
+															href="#sunday_slot"
+															class="nav-link active"
+															>Sunday</a
+														>
+													</li>
+													<li class="nav-item">
+														<a
+															data-toggle="tab"
+															href="#monday_slot"
+															class="nav-link"
+															>Monday</a
+														>
+													</li>
+													<li class="nav-item">
+														<a
+															data-toggle="tab"
+															href="#tuesday_slot"
+															class="nav-link"
+															>Tuesday</a
+														>
+													</li>
+													<li class="nav-item">
+														<a
+															data-toggle="tab"
+															href="#wednesday_slot"
+															class="nav-link"
+															>Wednesday</a
+														>
+													</li>
+													<li class="nav-item">
+														<a
+															data-toggle="tab"
+															href="#thursday_slot"
+															class="nav-link"
+															>Thursday</a
+														>
+													</li>
+													<li class="nav-item">
+														<a
+															data-toggle="tab"
+															href="#friday_slot"
+															class="nav-link"
+															>Friday</a
+														>
+													</li>
+													<li class="nav-item">
+														<a
+															data-toggle="tab"
+															href="#saturday_slot"
+															class="nav-link"
+															>Saturday</a
+														>
+													</li>
+												</ul>
+											</nav>
+											<div class="tab-content py-3">
+												<div class="tab-pane active fade show" id="sunday_slot">
+													<h6
+														class="card-title d-flex justify-content-lg-between"
+													>
+														<span>Time Slots</span>
+													</h6>
+
+													<div class="doc-slots">
+														<div class="doc-time">
+															8:00 am-9:00 am &nbsp;
+														</div>
+														<div class="doc-time">
+															12:00 pm-1:00 pm &nbsp;
+														</div>
+														<div class="doc-time">
+															2:00 pm-3:00 pm &nbsp;
+														</div>
+														<div class="doc-time">
+															2:00 pm-3:00 pm &nbsp;
+														</div>
+														<div class="doc-time">
+															2:00 pm-3:00 pm &nbsp;
+														</div>
+														<div class="doc-time">
+															2:00 pm-3:00 pm &nbsp;
+														</div>
+														<div class="doc-time">
+															2:00 pm-3:00 pm &nbsp;
+														</div>
+														<div class="doc-time">
+															2:00 pm-3:00 pm &nbsp;
+														</div>
+														<div class="doc-time">
+															2:00 pm-3:00 pm &nbsp;
+														</div>
+														<div class="doc-time">
+															2:00 pm-3:00 pm &nbsp;
+														</div>
+													</div>
+												</div>
+												<div class="tab-pane fade" id="monday_slot">
+													<h6
+														class="card-title d-flex justify-content-lg-between"
+													>
+														<span>Time Slots</span>
+													</h6>
+													<div class="doc-slots">
+														<div class="doc-time">
+															9:00 am-10:00 am &nbsp;
+														</div>
+														<div class="doc-time">
+															3:00 pm-4:00 am &nbsp;
+														</div>
+														<div class="doc-time">
+															2:30 pm-3:00 pm &nbsp;
+														</div>
+													</div>
+												</div>
+												<div class="tab-pane fade" id="tuesday_slot">
+													<h6
+														class="card-title d-flex justify-content-lg-between"
+													>
+														<span>Time Slots</span>
+													</h6>
+													<p class="text-muted">Not Available</p>
+												</div>
+												<div class="tab-pane fade" id="wednesday_slot">
+													<h6
+														class="card-title d-flex justify-content-lg-between"
+													>
+														<span>Time Slots</span>
+													</h6>
+													<p class="text-muted">Not Available</p>
+												</div>
+												<div class="tab-pane fade" id="thursday_slot">
+													<h6
+														class="card-title d-flex justify-content-lg-between"
+													>
+														<span>Time Slots</span>
+													</h6>
+													<p class="text-muted">Not Available</p>
+												</div>
+												<div class="tab-pane fade" id="friday_slot">
+													<h6
+														class="card-title d-flex justify-content-lg-between"
+													>
+														<span>Time Slots</span>
+													</h6>
+													<p class="text-muted">Not Available</p>
+												</div>
+												<div class="tab-pane fade" id="saturday_slot">
+													<h6
+														class="card-title d-flex justify-content-lg-between"
+													>
+														<span>Time Slots</span>
+													</h6>
+													<p class="text-muted">Not Available</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="modal-footer">
+								<button
+									type="button"
+									class="btn btn-danger"
+									data-dismiss="modal"
+								>
+									Close
+								</button>
 							</div>
 						</div>
 					</div>
