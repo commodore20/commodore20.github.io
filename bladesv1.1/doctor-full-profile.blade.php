@@ -126,7 +126,7 @@
 					</div>
 				</div>
 				<!-- Modal event for View Schedule -->
-				<div
+			<div
 					class="modal fade"
 					id="viewSched"
 					tabindex="-1"
