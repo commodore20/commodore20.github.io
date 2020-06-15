@@ -679,3 +679,8 @@ ul li a#hov:hover {
 	background-color: rgba(40, 52, 71, 0.12) !important;
 	color: #283447 !important;
 }
+
+.img-100x100 {
+	width: 100px;
+	height: 100px;
+}
